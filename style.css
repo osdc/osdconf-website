@@ -1,0 +1,68 @@
+footer, header {
+	padding: 0 200px 0 200px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: #FFFCFA;
+}
+
+main {
+	padding: 80px 200px 0 200px;
+	min-height: 70%;
+}
+
+#flag {
+	margin: 0 auto;
+	position: relative;
+	width: 500px;
+}
+
+#osdconf-logo span {
+	font-family: "League Gothic",Impact,sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#logo-part1 {
+	color: #FF0080;
+	margin: 0 10px 0 24px;
+	font-size: 84px;
+}
+
+#logo-part2 {
+	color: #000000;
+	font-size: 84px;
+}
+
+#osdconf-logo #logo-part3 {
+	color: #0080FF;
+	font-size: 48px;
+	margin-right: 10px;
+}
+
+#osdconf-logo #logo-part4 {
+	color: #00FF00;
+	font-size: 48px;
+}
+
+#osdc-logo img {
+	width: 180px;
+}
+
+#osdconf-logo {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+#date-venue {
+	font-family: Palatino;
+	font-size: 28px;
+	margin: 10px auto 5px auto;
+	width: 180px;
+}
+
