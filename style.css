@@ -59,10 +59,15 @@ main {
 	border-bottom: 1px solid #ccc;
 }
 
-#date-venue {
+#date-venue, #coming-soon {
 	font-family: Palatino;
 	font-size: 28px;
 	margin: 10px auto 5px auto;
-	width: 180px;
+	width: 240px;
+}
+
+#coming-soon {
+	margin-top: 100px;
+	width: 320px;
 }
 
