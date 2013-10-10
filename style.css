@@ -29,24 +29,24 @@ main {
 }
 
 #logo-part1 {
-	color: #FF0080;
+	color: #e0186f;
 	margin: 0 10px 0 24px;
 	font-size: 84px;
 }
 
 #logo-part2 {
-	color: #000000;
+	color: #282727;
 	font-size: 84px;
 }
 
 #osdconf-logo #logo-part3 {
-	color: #0080FF;
+	color: #009dd9;
 	font-size: 48px;
 	margin-right: 10px;
 }
 
 #osdconf-logo #logo-part4 {
-	color: #00FF00;
+	color: #a3fb4b;
 	font-size: 48px;
 }
 
@@ -70,4 +70,3 @@ main {
 	margin-top: 100px;
 	width: 320px;
 }
-
