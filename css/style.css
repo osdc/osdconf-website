@@ -1,7 +1,3 @@
-footer, header {
-	padding: 0 200px 0 200px;
-}
-
 html {
 	height: 100%;
 }
@@ -12,14 +8,17 @@ body {
 }
 
 main {
-	padding: 80px 200px 0 200px;
+	margin: 40px auto;
 	min-height: 70%;
+	text-align: center;
+	max-width: 50%;
+	min-width: 320px;
 }
 
 #flag {
 	margin: 0 auto;
 	position: relative;
-	width: 500px;
+
 }
 
 #osdconf-logo span {
@@ -60,13 +59,40 @@ main {
 }
 
 #date-venue, #coming-soon {
+	color: #ee6666;
 	font-family: Palatino;
 	font-size: 28px;
 	margin: 10px auto 5px auto;
-	width: 240px;
 }
 
 #coming-soon {
 	margin-top: 100px;
 	width: 320px;
+}
+
+.main-content {
+	margin-bottom: 10px;
+	font-family: Palatino;
+}
+
+.main-content h2 {
+	text-align: center;
+	color: #ee6666
+}
+
+.main-content p {
+	font-size: 20px;
+	text-align: left;
+}
+
+.main-content img {
+	width: 98%;
+}
+
+.main-content:first-of-type {
+	margin-top: 64px;
+}
+
+footer {
+	text-align: center;
 }
