@@ -11,7 +11,7 @@ main {
 	margin: 40px auto;
 	min-height: 70%;
 	text-align: center;
-	max-width: 50%;
+	max-width: 60%;
 	min-width: 320px;
 }
 
@@ -46,7 +46,8 @@ main {
 
 #osdconf-logo #logo-part4 {
 	color: #a3fb4b;
-	font-size: 48px;
+	font-size: 60px;
+	text-align: center;
 }
 
 #osdc-logo img {
@@ -66,31 +67,47 @@ main {
 }
 
 #coming-soon {
-	margin-top: 100px;
+	margin-top: 10px;
 	width: 320px;
 }
 
 .main-content {
 	margin-bottom: 10px;
 	font-family: Palatino;
+	margin-top: 64px;
 }
 
 .main-content h2 {
 	text-align: center;
-	color: #ee6666
+	display: inline-block;
+	padding: 10px 20px;
+	width: 100%;
+	margin-left: -2%;
+	font-family: aleolight;
+	color: #ee6666;
+	background-color: #FDEDCC;
 }
 
 .main-content p {
 	font-size: 20px;
-	text-align: left;
+	text-align: center;
 }
 
 .main-content img {
-	width: 98%;
+	width: 68%;
 }
 
-.main-content:first-of-type {
-	margin-top: 64px;
+.main-content  h3 {
+	text-align: left;
+	font-size: 120%;
+}
+
+#speakers p, #sponsors p {
+	text-align: left;
+}
+
+.main-content:last-of-type {
+	margin-bottom: 70px;
 }
 
 footer {
@@ -104,12 +121,12 @@ input {
 }
 
 #notify-me {
-	margin-top: 10px;
+	margin-top: 30px;
 	cursor: pointer;
 	border: none;
 	background-color: #2B9DC9;
 	height: 48px;
-	width: 120px;
+	width: 180px;
 	font-size: 18px;
 	color: #eFeFeF;
 }
@@ -117,4 +134,11 @@ input {
 #notify-box {
 	display: none;
 	font-family: Palatino;
+}
+
+#notify-box-wrapper {
+
+	padding: .7em 1em;
+	margin-bottom: 1em;
+
 }
