@@ -142,3 +142,26 @@ input {
 	margin-bottom: 1em;
 
 }
+
+#menu-bar {
+
+list-style-type:none;
+margin:0;
+padding:0;
+background-color: #A4B9E0;
+height: 50px;
+width: 1200px;
+left:0px;
+border-radius: 10px;
+background: rgb(178,225,255); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(178,225,255,1) 0%, rgba(102,182,252,1) 49%); 
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(178,225,255,1)), color-stop(49%,rgba(102,182,252,1))); 
+background: -webkit-linear-gradient(-45deg,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 49%); 
+background: -o-linear-gradient(-45deg,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 49%); 
+background: -ms-linear-gradient(-45deg,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 49%); 
+background: linear-gradient(135deg,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 49%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=1 ); 
+padding-top:-20px;
+}
+
+
