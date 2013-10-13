@@ -72,9 +72,13 @@ main {
 }
 
 .main-content {
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 	font-family: Palatino;
 	margin-top: 64px;
+}
+
+.main-content:first-of-type {
+	margin-top: 150px;
 }
 
 .main-content h2 {
@@ -146,11 +150,10 @@ input {
 #menu-bar {
 
 list-style-type:none;
-margin:0;
-padding:0;
+margin: 50px 0px 100px -100px ;
 background-color: #A4B9E0;
 height: 50px;
-width: 1200px;
+width: 930px;
 left:0px;
 border-radius: 10px;
 background: rgb(178,225,255); /* Old browsers */
