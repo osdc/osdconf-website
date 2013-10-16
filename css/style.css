@@ -83,19 +83,34 @@ main {
 
 
 .main-content h2 {
-	text-align: center;
+	text-align: left;
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 0px;
 	width: 100%;
-	font-size:2.1em;
+	font-size:2.8em;
 	/*
 	margin-left: -2%;
 	font-family: aleolight;
-	color: #ee6666;*/
+	color: #ee6666;
 	background-color: #ff9d00;
-	color: #fff;
+	*/
+	color: #000;
 	
 }
+
+#about h2 {
+	border-bottom: solid 3px #e0186f;
+}
+
+#speakers h2 {
+	border-bottom: solid 3px #282727;
+}
+
+#sponsors h2 {
+	border-bottom: solid 3px #009dd9;
+}
+
+
 
 
 .main-content p {
@@ -156,35 +171,46 @@ input {
 
 }
 
-#menu-bar {
-
-list-style-type:none;
-margin: 50px 0px 100px -100px ;
-background-color: #A4B9E0;
-height: 50px;
-width: 1200px;
-left:0px;
-border-radius: 10px;
-background: rgb(178,225,255); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(178,225,255,1) 0%, rgba(102,182,252,1) 49%); 
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(178,225,255,1)), color-stop(49%,rgba(102,182,252,1))); 
-background: -webkit-linear-gradient(-45deg,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 49%); 
-background: -o-linear-gradient(-45deg,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 49%); 
-background: -ms-linear-gradient(-45deg,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 49%); 
-background: linear-gradient(135deg,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 49%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=1 ); 
-padding-top:-30px;
-margin-left:100px;
-margin-top:15px
+.menu-bar{
+margin-top:25px;
+margin-bottom : 70px;
 }
 
-#typo{
-text-shadow: 0px 2px 3px #555;
-color:#ffffff;  
-font-size:30px;
-font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+.menu-bar li {
+	margin-right: 30px;
+}
+
+.menu-bar li:nth-of-type(4n+1) :hover
+{
+border-bottom: solid 2px #e0186f;
+}
+
+.menu-bar li:nth-of-type(4n+2) :hover
+{
+border-bottom: solid 2px #282727;
+}
+.menu-bar li:nth-of-type(4n+3) :hover
+{
+border-bottom: solid 2px #009dd9;
+}
+
+.menu-bar li:nth-of-type(4n+4) :hover
+{
+border-bottom: solid 2px #a3fb4b;
+}
+
+
+.menu-bar li a {
+	color:#333;
+	font-size : 1.9em;
+	font-family : helvetica;
 
 }
+
+.menu-bar li a:hover {
+	text-decoration: none;
+}
+
 
 #about-text-about {
 	font-size:20px;
