@@ -110,9 +110,13 @@ main {
 	border-bottom: solid 3px #009dd9;
 }
 
+#register h2 {
+        border-bottom: solid 3px #a3fb4b;
+}
 
-
-
+#venue h2{
+        border-bottom: solid 3px #e0186f;
+}
 .main-content p {
 	font-size: 20px;
 	text-align: center;
@@ -127,7 +131,9 @@ main {
 
 .main-content  h3 {
 	text-align: left;
-	font-size: 120%;
+        margin-bottom: 40px;
+        font-weight: 700;
+	font-size: 160%;
 }
 
 #speakers p, #sponsors p {
