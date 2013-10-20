@@ -263,10 +263,14 @@ a.mouse-top:link {text-decoration:none;}
  
 a.mouse-top:hover {text-decoration:underline;} 
 
-#map-canvas { height: 450px; width:640px;
-              float: left; 
-              margin-top: 40px;
-              margin-bottom: 20px;}
+#map-canvas { 
+	position: relative;
+    	width: 75%;
+    	height: 0;
+	padding-bottom: 50%;
+	float: left;
+	margin-top: 40px;
+	margin-bottom: 20px;}
 
 #venue h5 {
 	float :left;
