@@ -216,6 +216,9 @@ border-bottom: solid 2px #a3fb4b;
 	text-decoration: none;
 }
 
+.row{
+	width: 100%;
+}
 
 #about-text-about {
 	font-size:20px;
