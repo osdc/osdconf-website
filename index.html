@@ -7,6 +7,9 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <!-- Enabling responsiveness  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        
 </head>
 <body>
     <main>
@@ -101,7 +104,7 @@
     <footer>
         <hr>
         <div id="osdc-logo">
-            <img src="img/logo.png" alt="logo">
+            <a href="http://osdc.github.io" target='_blank'><img src="img/logo.png" alt="logo"></a>
         </div>
     </footer>  
 
@@ -111,13 +114,22 @@
     </script>
     <script type="text/javascript">
       function initialize() {
+        var JIIT=new google.maps.LatLng(28.630298, 77.372050);
         var mapOptions = {
-          center: new google.maps.LatLng(28.6298, 77.3689),
+          center: JIIT,
           zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
+
+        var marker= new google.maps.Marker({
+          position: JIIT,
+          map: map,
+          title: "Jaypee Institute of Information Technology"
+
+        });
+
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
