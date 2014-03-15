@@ -102,6 +102,9 @@ main {
     border-bottom: solid 3px #e0186f;
 }
 
+#contact_us h2 {
+    border-bottom: solid 3px #2B9DC9;
+}
 .main-content p {
     font-size: 20px;
     text-align: center;
@@ -139,7 +142,7 @@ input {
     padding: 8px;
 }
 
-#notify-me {
+#propose {
     margin-top: 30px;
     cursor: pointer;
     border: 0;
@@ -150,12 +153,8 @@ input {
     color: #eFeFeF;
 }
 
-#notify-box {
-    display: none;
-    font-family: Palatino;
-}
 
-#notify-box-wrapper {
+#propose-wrapper {
     padding: .7em 1em;
     margin-bottom: 1em;
 }
