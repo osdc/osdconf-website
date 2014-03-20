@@ -15,15 +15,15 @@
 <div class="container">
     <main>
 
-        <nav>
+        <nav class="navbar-default navbar-fixed-top" role="navigation">
         <ul class="list-inline text-center menu-bar">
 
                   <li><a href="#about">ABOUT</a></span></li>
                   <li><a href="#speakers">SPEAKERS</a></span></li>
                   <li><a href="#sponsors">SPONSORS</a></span></li>
                   <li><a href="#register">REGISTER</a></span></li>
-                  <li><a href="#venue">VENUE</a></s></li>
-
+                  <li><a href="#venue">VENUE</a></span></li>
+                  
         </ul>
         </nav>
 
@@ -50,12 +50,8 @@
                 <span>&#9733; April 26-27th, Noida &#9733;</span>
             </div>
         </div>
-        <div id="notify-box-wrapper">
-            <div id="notify-box">
-                <p>Leave your email address here and we will let know when we have an important update.</p>
-                <input type="text" id="notify-email" size="50">
-            </div>
-            <button id="notify-me">Get Updates</button>
+        <div id="propose-wrapper">
+             <button id="propose" onclick=window.open("http://osdconf.in/funnel/osdconf14/")>Propose a session</button>
         </div>
 
         <section class="main-content" id="about">
@@ -70,7 +66,7 @@
             <p> We are now accepting submissions for presentations.</p>
             <p> We'd love to hear your ideas for talks on the many and varied aspects of Open Source Technologies. Our favorite topics
                 are those that deliver hard-earned knowledge based on real-world experience and research. We are mainly intrested in the topics like Web Ecosystem, Hardware Programming, etc. Come share with us! </p>
-            <p> Go ahead, <a href="funnel">suggest a speaker</a> or <a href="funnel">submit a talk!</a> </p>
+            <p> Go ahead, <a href="http://osdconf.in/funnel/">submit a talk!</a> </p>
         </section>
 
         <section class="main-content" id="sponsors">
@@ -78,7 +74,7 @@
              <h3> Call For Sponsorship </h3>
              <p> We are seeking sponsors to help us create the best conference possible. Please act fast and help up make this a
                  success </p>
-             <p> For more information please <a href="#">contact us</a>. </p>
+             <p> For more information please <a href="mailto:contact@osdconf.in">contact us</a>. </p>
         </section>
 
         <section class="main-content" id="register">
@@ -99,8 +95,8 @@
               </p>
               <h5> LandMark </h5>
               <span id="landmark"> Near Noida Expo Center </span>
+              <div id="map-canvas"/></div>
         </section>
-        <div id="map-canvas"/></div>
       </div>
     </div>
     </div>
