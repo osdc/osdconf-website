@@ -68,9 +68,9 @@ main {
 }
 
 .main-content {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-family: Palatino;
-    margin-top: 64px;
+    margin-top: 20px;
 }
 
 .main-content h2 {
@@ -270,4 +270,21 @@ a.mouse-top:hover {
     position: relative;
     top: 13px;
     font-size: 120%;
+}
+
+.sponsorship-type h3 {
+    margin: 0;
+}
+
+img.sponsor-image {
+    margin: 0;
+    width: 180px;
+}
+
+.sponsors-list {
+    text-align: left;
+}
+
+.sponsors-section {
+    margin-bottom: 24px;
 }
