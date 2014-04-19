@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <title>OSDConf 2014</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <!-- Enabling responsiveness  -->
@@ -10,133 +8,61 @@
     <!--favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
+    <link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-<div class="container">
-    <main>
 
-        <nav class="navbar-default navbar-fixed-top" role="navigation">
-        <ul class="list-inline text-center menu-bar">
+    <header class="main-header">
+        <div class="logo"><img src="/img/osdconf.png" alt=""></div>
+        <div class="title">Open Source Developers Conference </div>
+        <div class="sub-title">26-27th Nov, Jaypee Institute of Information Technology</div>
+    </header>
 
-                  <li><a href="#about">ABOUT</a></span></li>
-                  <li><a href="#speakers">SPEAKERS</a></span></li>
-                  <li><a href="#sponsors">SPONSORS</a></span></li>
-                  <li><a href="#register">REGISTER</a></span></li>
-                  <li><a href="#venue">VENUE</a></span></li>
-                  
-        </ul>
-        </nav>
-
-    	<div class="row">
-    	<div class="col-xs-2 hidden-md hidden-lg">
-    	</div>
-    	<div class="col-md-offset-2 col-md-8 col-xs-8">
-    		<div class="content">
-
-    		<!--
-            <ul id="menu-bar">
-                <div style="padding-top:15px;">
-                </div>
-            </ul>
-			-->
-        <div id="flag">
-            <div id="osdconf-logo">
-                <span id="logo-part1">Open</span>
-                <span id="logo-part2">Source</span><br>
-                <span id="logo-part3">Developers</span>
-                <span id="logo-part4">Conference</span>
+    <div class="main-container">
+        <p>
+            We are a bunch of <a href="https://github.com/orgs/osdc/members">crazy people</a> who love to hack and collaborate. By obvious nature, we also love open source and have been contributing to it since we got introduced to it. We love going to conferences and hackathons, meet new people, discuss thier workflows and hack with them to build something.
+        </p>
+        <p>
+            We have learned a lot from people who have pushed us forward, and want to do the same for other people, hence we decided to organize a small conference for people like us - <strong>OSDConf</strong>. With help from zomato, Wikimedia, mozilla and GitHub we have been able to arrange this conference. Wether you are a beginner or a pro, it does not matter to us, as long as you are willing to learn and collaborate, there is definitely going to be something for you there.
+        </p>
+        <p>
+            The conference is on 24th April at <a href="#" class="js-map-open">Jaypee Institute of Information Technology </a> ( <a href="#" class="ion-map js-map-open"></a> ).
+        </p>
+            <div id="map-container" class="js-map-container">
             </div>
-            <div id="date-venue">
-                <span>&#9733; April 26-27th, Noida &#9733;</span>
+        <p>
+            We have some <a href="">sessions</a> already planned up, and if you want to give one of your own, <a href="">propose your session here</a>. If you are not the session kind of people, we have hackspaces for you. </p>
+        <p>
+            That feeling that you get when you hit that <em>git push</em> command after gulping down your beer - If you know that feeling, you should definitely come over, but then again if you don't know the feeling, you should absolutely come over to know what it feels like.
+        </p>
+        <div class="action-container">
+            <div class="join-button">JOIN US</div>
+            <div class="form-container">
+                <input type="text" class="hack-message" placeholder="What would you like to hack on ?">
+                <div class="submit-button">COMMIT</div>
             </div>
         </div>
-        <div id="propose-wrapper">
-             <button id="propose" onclick=window.open("http://osdconf.in/funnel/osdconf14/")>Propose a Session</button>
-        </div>
 
-        <section class="main-content" id="about">
-            <h2 class="lead">About OSDConf</h2>
-            <p>OSDC organised OSSCamp Delhi in 2010, with other open-source communities around. The unconference was loaded with FOSS spirit, open hacks and free swag.</p>
-            <p>OSDConf, as a fresh edition of attempts by OSDC to promote FOSS, is coming to revive the same energy.</p>
-            <img src="img/osscamp1.jpg">
-        </section>
-        <section class="main-content" id="speakers">
-            <h2 class="lead"> Speakers </h2>
-            <h3> Call for Proposals </h3>
-            <p> We are now accepting submissions for presentations.</p>
-            <p> We'd love to hear your ideas for talks on the many and varied aspects of Open Source Technologies. Our favorite topics
-                are those that deliver hard-earned knowledge based on real-world experience and research. We are mainly intrested in the topics like Web Ecosystem, Hardware Programming, etc. Come share with us! </p>
-            <p> Go ahead, <a href="http://osdconf.in/funnel/">submit a talk!</a> </p>
-        </section>
-
-        <section class="main-content" id="sponsors">
-             <h2 class="lead"> Sponsors </h2>
-             <h3> Call For Sponsorship </h3>
-             <p> We are seeking sponsors to help us create the best conference possible. Please act fast and help up make this a
-                 success </p>
-             <p> For more information please <a href="mailto:contact@osdconf.in">contact us</a>. </p>
-        </section>
-
-        <section class="main-content" id="register">
-              <h2 class="lead"> Registrations </h2>
-              <p>
-              <iframe id='ifrm' name='ifr' class="well" src='http://doattend.com/embed_ticket/38029' scrolling='no' width='100%' height='350' frameborder="0" seamless>
-                  Oops!! Sorry you will have to <a href = 'http://osdconf.doattend.com'>register here</a></iframe>
-              </p>
-        </section>
-
-        <section class="main-content" id="venue">
-              <h2 class="lead"> Venue </h2>
-              <h3> Address </h3>
-              <p> Jaypee Institute of Information Technology <br>
-                A-10,Sector-62 <br>
-                Noida-201 307<br>
-                Uttar Pradesh 201307
-              </p>
-              <h5> LandMark </h5>
-              <span id="landmark"> Near Noida Expo Center </span>
-              <div id="map-canvas"/></div>
-        </section>
-      </div>
     </div>
-    </div>
-    </main>
-    <footer>
-        <hr>
-        <div id="osdc-logo">
-            <a href="http://osdc.github.io" target='_blank'><img src="img/logo.png" alt="logo"></a>
+
+
+    <footer class="main-footer">
+        <div class="osdc-logo">
+            <a href="http://osdc.github.io" target='_blank'>
+                <img src="img/logo.png" alt="logo">
+            </a>
         </div>
     </footer>
 
 
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtnTt4diLgTb8nC0P9FCFttB2GgdHLGqk&sensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var JIIT=new google.maps.LatLng(28.630298, 77.372050);
-        var mapOptions = {
-          center: JIIT,
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-
-        var marker= new google.maps.Marker({
-          position: JIIT,
-          map: map,
-          title: "Jaypee Institute of Information Technology"
-
-        });
-
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtnTt4diLgTb8nC0P9FCFttB2GgdHLGqk&sensor=true">
     </script>
     <script src='https://cdn.firebase.com/v0/firebase.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
-    <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="js/home.js"></script>
+
 <div>
 </body>
 </html>

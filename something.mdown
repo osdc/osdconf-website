@@ -1,0 +1,9 @@
+### purpose of the page
+ - to let people know what the osdConf is
+    - About the conference
+    - Sessions planned
+    - hackspaces
+    - tickets cost
+ - venue
+ - how to reach etc
+ - schedule
