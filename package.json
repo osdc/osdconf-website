@@ -1,0 +1,33 @@
+{
+  "name": "sarjak",
+  "version": "0.0.1",
+  "description": "Rendering Clientside websites for Pixpa. Grunt responsible for minification, concatenation of frontend assets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pixpa/sarjak.git"
+  },
+  "author": "drecodeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixpa/sarjak/issues"
+  },
+  "homepage": "https://github.com/pixpa/sarjak",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-contrib-uglify": "~0.4.0",
+    "jshint-stylish": "~0.1.5",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-hashres": "~0.4.1",
+    "grunt-recess": "~0.6.1",
+    "grunt-contrib-connect": "~0.7.1",
+    "connect-livereload": "~0.3.2"
+  }
+}
