@@ -1,0 +1,148 @@
+@import 'ionicons';
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #FFFCFA;
+}
+
+.main-header {
+    width: 100;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+    .logo {
+        width: 15%;
+        position: relative;
+        margin: 0 auto;
+    }
+    .title,
+    .sub-title {
+        margin: 10px 0;
+        text-align: center;
+        font-family: sans-serif;
+        color: lighten( black, 60% );
+    }
+    .title {
+        font-weight: 700;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    font-family: 'Arvo', serif;
+    text-align: justify;
+    color: lighten( #000, 35% );
+    padding: 10px 0;
+    p {
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    a{
+        text-decoration: none;
+        color: #FC654C;
+        transition: 0.5s all ease-in-out;
+        &:hover {
+            color: lighten(#FC654C, 20% );
+        }
+    }
+    #map-container {
+        width: 100%;
+        height: 400px;
+        display: none;
+    }
+    .action-container {
+        position: relative;
+        overflow: hidden;
+        margin: 40px 0;
+        .join-button {
+            width: 150px;
+            border-radius: 2px;
+            padding: 5px 10px;
+            margin: 0 auto;
+            border: 1px solid darken( #FC654C, 10% );
+            background: #FC654C;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            cursor: pointer;
+            transition: 1s all ease-in-out;
+            display: none;
+            &:hover {
+                background: darken( #FC654C, 10% );
+                color: white;
+            }
+        }
+        .form-container {
+            position: relative;
+            overflow: hidden;
+            margin: 20px 0;
+            .hack-message {
+                .placeholder( lighten( #3c3c3c, 25% ) );
+                width: 500px;
+                margin: 0 auto;
+                display: block;
+                border: 1px solid #3c3c3c;
+                padding: 10px;
+                border-radius: 2px;
+                font-size: 1em;
+                color: darken( #FC654C, 10% );
+                &:active,
+                &:focus {
+                    border: 1px solid #FC654C;
+                    box-shadow: none;
+                    outline: none;
+                    .placeholder( lighten( white, 25% ) );
+
+                }
+            }
+            .submit-button {
+                .join-button;
+                display: block;
+                margin: 10px auto;
+                background: #FC654C;
+                border: none;
+
+            }
+        }
+    }
+}
+
+.main-footer {
+    background: #F6F6F6;
+    padding: 10px 0;
+    width: 100%;
+    .osdc-logo {
+        width: 150px;
+        padding: 20px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        img {
+            display: inline;
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+// Placeholder text
+.placeholder(@color: @input-color-placeholder) {
+  &:-moz-placeholder            { color: @color; } // Firefox 4-18
+  &::-moz-placeholder           { color: @color; } // Firefox 19+
+  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
