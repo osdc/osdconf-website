@@ -17,9 +17,7 @@ $( document ).ready( function(){
 
 
     function initialize() {
-        console.log( 'called' );
         var JIIT=new google.maps.LatLng( 28.630298, 77.372050 );
-        console.log( JIIT );
         var stylesArray = [{"featureType":"water","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]},{"featureType":"landscape","stylers":[{"color":"#f2e5d4"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"administrative","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"road"},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{},{"featureType":"road","stylers":[{"lightness":20}]}];
         var mapOptions = {
             center    : JIIT,
@@ -27,8 +25,7 @@ $( document ).ready( function(){
             mapTypeId : google.maps.MapTypeId.ROADMAP,
             styles    : stylesArray
         };
-        var map = new google.maps.Map( $( '#map-container' ), mapOptions );
-        console.log( map );
+        var map = new google.maps.Map( document.getElementById( 'map-container' ), mapOptions );
 
         var marker= new google.maps.Marker( {
             position  : JIIT,
@@ -55,7 +52,5 @@ $( document ).ready( function(){
         }
         return false;
     });
-
-
 
 });
