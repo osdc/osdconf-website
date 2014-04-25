@@ -282,10 +282,25 @@ img.sponsor-image {
 }
 
 .sponsors-list {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
 .sponsors-section {
     margin-bottom: 24px;
+}
+
+table.tableizer-table {
+  border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif
+  font-size: 12px;
+} 
+.tableizer-table td {
+  padding: 4px;
+  margin: 3px;
+  border: 1px solid #ccc;
+}
+.tableizer-table th {
+  background-color: #104E8B; 
+  color: #FFF;
+  font-weight: bold;
 }
