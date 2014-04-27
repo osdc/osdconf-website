@@ -9,43 +9,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/style.css">
-<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
     <header class="main-header">
         <div class="logo"><img src="/img/osdconf.png" alt=""></div>
-        <div class="title">Open Source Developers Conference </div>
-        <div class="sub-title">26-27th Nov, Jaypee Institute of Information Technology</div>
+        <div class="menu">
+            <li class="menu-item" data-status="active">#OSDCONF</li>
+            <li class="menu-item">SCHEDULE</li>
+            <li class="menu-item">#OSDCONFHACK</li>
+        </div>
     </header>
 
-    <div class="main-container">
-        <p>
-            We are a bunch of <a href="https://github.com/orgs/osdc/members">crazy people</a> who love to hack and collaborate. By obvious nature, we also love open source and have been contributing to it since we got introduced to it. We love going to conferences and hackathons, meet new people, discuss thier workflows and hack with them to build something.
-        </p>
-        <p>
-            We have learned a lot from people who have pushed us forward, and want to do the same for other people, hence we decided to organize a small conference for people like us - <strong>OSDConf</strong>. With help from zomato, Wikimedia, mozilla and GitHub we have been able to arrange this conference. Wether you are a beginner or a pro, it does not matter to us, as long as you are willing to learn and collaborate, there is definitely going to be something for you there.
-        </p>
-        <p>
-            The conference is on 24th April at <a href="#" class="js-map-open">Jaypee Institute of Information Technology </a> ( <a href="#" class="ion-map js-map-open"></a> ).
-        </p>
-            <div id="map-container" class="js-map-container">
-            </div>
-        <p>
-            We have some <a href="">sessions</a> already planned up, and if you want to give one of your own, <a href="">propose your session here</a>. If you are not the session kind of people, we have hackspaces for you. </p>
-        <p>
-            That feeling that you get when you hit that <em>git push</em> command after gulping down your beer - If you know that feeling, you should definitely come over, but then again if you don't know the feeling, you should absolutely come over to know what it feels like.
-        </p>
-        <div class="action-container">
-            <div class="join-button">JOIN US</div>
-            <div class="form-container">
-                <input type="text" class="hack-message" placeholder="What would you like to hack on ?">
-                <div class="submit-button">COMMIT</div>
-            </div>
-        </div>
-
-    </div>
+    <div class="feed-container js-feed-container"></div>
 
 
     <footer class="main-footer">
@@ -61,6 +38,9 @@
     </script>
     <script src='https://cdn.firebase.com/v0/firebase.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/templates.js"></script>
     <script src="js/home.js"></script>
 
 <div>

@@ -15,22 +15,76 @@ body {
     margin: 0 auto;
     padding: 10px 0;
     .logo {
-        width: 15%;
+        width: 5%;
         position: relative;
         margin: 0 auto;
     }
-    .title,
-    .sub-title {
-        margin: 10px 0;
-        text-align: center;
-        font-family: sans-serif;
-        color: lighten( black, 60% );
-    }
-    .title {
-        font-weight: 700;
-    }
     img {
         max-width: 100%;
+    }
+    .menu {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        margin: 0 auto;
+        margin: 40px auto 10px auto;
+        font-family: 'Lato', 'sans-serif';
+        .menu-item {
+            position: relative;
+            float: left;
+            width: 33.33%;
+            list-style: none;
+            text-align: center;
+            color: #D88A8A;
+            &[data-status="active"] {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.feed-container {
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Lato', 'sans-serif';
+
+}
+.feed-item {
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    .feed-inner {
+        position: relative;
+        padding: 10px 0;
+        overflow: hidden;
+        text-align: left;
+        .feed-time {
+            color: lighten( #3c3c3c, 30% );
+            font-size: 0.8em;
+            line-height: 2em;
+            margin-bottom: 10px;
+        }
+        .feed-message {
+            color: #3c3c3c;
+            font-size: 1.4em;
+            line-height: 1.5em;
+            width: 90%;
+        }
+        .feed-author {
+            margin: 10px 0;
+            color: lighten( #3c3c3c, 30% );
+            font-size: 0.8em;
+        }
+        img {
+
+            max-width: 100%;
+        }
     }
 }
 

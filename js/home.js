@@ -53,4 +53,54 @@ $( document ).ready( function(){
         return false;
     });
 
+    var textData = [];
+    var imageData = [];
+
+    $.ajax({
+        type: 'GET',
+        url : 'https://graph.facebook.com/222284631283564/feed',
+        data : {
+            access_token : 'CAAUtuZBwpGdgBAInJmyK7We4euOfLaZBd5Ex3mKUx00AzQ7PuAbXZBogYhAfMCUkUrYbjd1FPhXsb5pvBrcZCU05V7w7E8Pdaa4ysccM2Wk6jYcoEUC0thxtjfJDn1K7n0TMyXQ9Io29sVdxmYW27JyZBjFarfeWgMIOzHGtJEjxt4wMV9uZBKO88E4rMPUEQZD'
+        },
+        success: function( response ) {
+            console.log( response );
+            for ( item in response.data ) {
+                var feedItem = response.data[ item ];
+                feedItem.created_time = moment(feedItem.created_time).fromNow();
+                if ( feedItem.picture ) {
+                    feedItem.picture = feedItem.picture.replace( "_s.jpg","_o.jpg" );
+                    imageData.push( feedItem );
+                    textData.push( feedItem );
+                } else {
+                    textData.push( feedItem );
+                }
+            }
+            var html = osdc['templates/feed.hbs']( textData );
+            var htmlImage = osdc['templates/image.hbs']( imageData );
+
+            // $( '.js-image-container' ).html( htmlImage );
+            $( '.js-feed-container' ).html( html );
+
+            console.log( html );
+        }
+    })
+    $.ajax({
+        type: 'GET',
+        url : 'https://api.twitter.com/1.1/statuses/user_timeline.json',
+        datatype: 'jsonp',
+        data : {
+            access_token : 'CAAUtuZBwpGdgBAInJmyK7We4euOfLaZBd5Ex3mKUx00AzQ7PuAbXZBogYhAfMCUkUrYbjd1FPhXsb5pvBrcZCU05V7w7E8Pdaa4ysccM2Wk6jYcoEUC0thxtjfJDn1K7n0TMyXQ9Io29sVdxmYW27JyZBjFarfeWgMIOzHGtJEjxt4wMV9uZBKO88E4rMPUEQZD',
+            user_id      : 'https://api.twitter.com/1.1/statuses/user_timeline.json?',
+            count        : 20,
+            exclude_replies : true,
+            oauth_consumer_key : 'wWQanLiTA2057PMrrMA',
+        },
+        success: function( response ) {
+            console.log( response );
+        }
+    });
+
+
+
+
 });

@@ -1,0 +1,14 @@
+{{#each this}}
+
+<div class="feed-item">
+    <div class="feed-inner">
+        <div class="feed-time">{{created_time}}</div>
+        {{#if picture }}
+        <div class="feed-photo"><img src='{{picture}}'></div>
+        {{/if}}
+        <div class="feed-message">{{story}}{{message}}</div>
+        <div class="feed-author">-{{author.name}}{{from.name}}</div>
+    </div>
+</div>
+
+{{/each}}

@@ -102,7 +102,15 @@ module.exports = function (grunt) {
                 options: {
                     reload: true
                 }
+            },
+            templates: {
+                files: [ 'templates/**/*.hbs' ],
+                options: {
+                    reload: true,
+                },
+                tasks: ['handlebars']
             }
+
         },
         recess : {
             build : {
@@ -129,7 +137,18 @@ module.exports = function (grunt) {
                     ext: '.css'
                 }]
             }
+        },
+        handlebars: {
+            compile: {
+                options: {
+                    namespace: "osdc"
+                },
+                files: {
+                    "js/templates.js": "templates/**/*.hbs",
+                }
+            }
         }
+
     });
 
     // Loading all the tasks
@@ -142,6 +161,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
 
     // Registering tasks
     grunt.registerTask('build', [
