@@ -1,32 +1,61 @@
 body {
   margin: 0;
-  min-height: 100vh;
-  background: #3a7bd5;
-  background-image: -webkit-radial-gradient(top, circle cover, #00c6ff 0%, #0072ff 80%);
+  background: #000060;
+  background-image: -webkit-radial-gradient(bottom, circle cover, #1CB5E2 0%, #000060 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  align-items:center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.main {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .overlay {
   display: flex;
-  position: fixed;
+  position: absolute;
+  z-index: 200;
   padding: 10px;
-  width: 0vw;
   height: 0vh;
-  background: transparent;
-  color: transparent;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 200;
   visibility: hidden;
   color: white;
-  animation: appear 300ms ease-in-out 1 forwards;
-  animation-delay: 9300ms;
+  animation: appear 870ms ease-in-out 1 forwards;
+  animation-delay: 4500ms;
+  font-size: 40px;
+}
+
+.proceed {
+  height: 40px;
+  width: 140px;
+  box-shadow: none;
+  border: 0;
+  font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: #0288d1;
+  color: white;
+  z-index: 500;
+  margin-bottom: 40px;
+}
+
+.proceed:hover {
+  background-color: white;
+  color: #0288d1;
+  cursor: pointer;
 }
 
 @keyframes appear {
@@ -41,14 +70,14 @@ body {
     height: 0vh;
     width: 0vw;
     visibility: hidden;
-    background: rgba(0,0,0,0.93);
+    background: rgba(0,0,0,0.90);
   }
-  
+
   100% {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     visibility: visible;
-    background: rgba(0,0,0,0.93);
+    background: rgba(0,0,0,0.90);
   }
 }
 
@@ -65,13 +94,16 @@ p {
 .screen {
   min-height: 50vh;
   min-width: 80vw;
+  border-radius: 7px;
+  box-shadow: 2px 11px 17px rgba(0, 0, 0, 0.48);
+
 }
 
 .session {
-  position: relative;
+  position: absolute;
   text-align: center;
   font-family: 'Source Code Pro',sans-serif;
-  left: 25%;
+  left: 42%; 
 }
 
 .terminal {
@@ -84,12 +116,14 @@ p {
   font-size: 14px;
   padding: 10px;
   color: white;
+  background: rgba(0,0,0,0.84);
 }
 
 .navbar {
   height: 4vh;
   padding-left: 5px;
-  background: rgb(246, 246, 246);
+  background: rgba(0,0,0,0.89);
+  color: #eeeeee;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
@@ -104,7 +138,7 @@ p {
   margin-left: 4px;
   box-shadow: none;
   outline: none;
-  border: 0.05em solid grey;
+  border: 0;
 }
 
 .close {
@@ -117,42 +151,36 @@ p {
   background-color: #25cc3e;
 }
 
-.terminal {
-  height: 46vh;
-  background-color: black;
-    opacity: 0.75;
-}
-
 .line1 {
   color: #9CD9F0;
-  animation: type .5s 0.5s forwards;
+  animation: type 1.5s 0.5s forwards;
 }
 
 .cursor1 {
-  animation: blink 1s 1s 2 forwards;
+  animation: blink 0.7s 0.4s 2 forwards;
 }
 
 .line2 {
   color: #CDEE69;
-  animation: type .5s 3.25s forwards;
+  animation: type 1.5s 1.8s forwards;
 }
 
 .cursor2 {
-  animation: blink 1s 5.25s 2 forwards;
+  animation: blink 0.7s 1.2s 2 forwards;
 }
 
 .line3 {
   color: #E09690;
-  animation: type .5s 7.5s forwards;
+  animation: type 1.7s 2.8s forwards;
 }
 
 .cursor3 {
-  animation: blink 1s 8.5s infinite forwards;
+  animation: blink 0.7s 1.8s infinite forwards;
 }
 
 .line4 {
   color: #fff;
-  animation: type .5s 10.75s forwards;
+  animation: type 1.7s 3.8s forwards;
 }
 
 .cursor4 {
@@ -180,5 +208,19 @@ p {
 @keyframes type {
   to {
     width: 20em;
+  }
+}
+
+/* media queries */
+
+@media only screen and max-width(420px) {
+  body {
+    padding: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .screen {
+    width: 300px;
   }
 }
