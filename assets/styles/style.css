@@ -2,7 +2,7 @@ body {
   margin: 0;
   background: #1CB5E2;
   background-image: -webkit-radial-gradient(bottom, circle cover, #1CB5E2 0%, #000060 100%);
-overflow-x: hidden;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 
@@ -29,7 +29,7 @@ overflow-x: hidden;
   visibility: hidden;
   color: white;
   animation: appear 870ms ease-in-out 1 forwards;
-  animation-delay: 4500ms;
+  animation-delay: 6200ms;
   font-size: 40px;
 }
 
@@ -52,6 +52,75 @@ overflow-x: hidden;
   background-color: white;
   color: #0288d1;
   cursor: pointer;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    height: 0vh;
+    width: 0%;
+    visibility: hidden;
+    background: transparent;
+  }
+  
+  50% {
+    height: 0vh;
+    width: 0%;
+    visibility: hidden;
+    background: rgba(0,0,0,0.90);
+  }
+
+  100% {
+    height: 100vh;
+    width: 100%;
+    visibility: visible;
+    background: rgba(0,0,0,0.90);
+  }
+}
+
+@-moz-keyframes appear {
+  0% {
+    height: 0vh;
+    width: 0%;
+    visibility: hidden;
+    background: transparent;
+  }
+  
+  50% {
+    height: 0vh;
+    width: 0%;
+    visibility: hidden;
+    background: rgba(0,0,0,0.90);
+  }
+
+  100% {
+    height: 100vh;
+    width: 100%;
+    visibility: visible;
+    background: rgba(0,0,0,0.90);
+  }
+}
+
+@-o-keyframes appear {
+  0% {
+    height: 0vh;
+    width: 0%;
+    visibility: hidden;
+    background: transparent;
+  }
+  
+  50% {
+    height: 0vh;
+    width: 0%;
+    visibility: hidden;
+    background: rgba(0,0,0,0.90);
+  }
+
+  100% {
+    height: 100vh;
+    width: 100%;
+    visibility: visible;
+    background: rgba(0,0,0,0.90);
+  }
 }
 
 @keyframes appear {
@@ -149,38 +218,38 @@ p {
 
 .line1 {
   color: #9CD9F0;
-  animation: type 1.5s 0.5s forwards;
+  animation: type 1.5s 1s forwards;
 }
 
 .cursor1 {
-  animation: blink 0.7s 0.4s 2 forwards;
+  animation: blink 0.7s 0.8s 3 forwards;
 }
 
 .line2 {
   color: #CDEE69;
-  animation: type 1.5s 1.8s forwards;
+  animation: type 1.5s 2.8s forwards;
 }
 
 .cursor2 {
-  animation: blink 0.7s 1.2s 2 forwards;
+  animation: blink 0.7s 2.0s 3 forwards;
 }
 
 .line3 {
   color: #E09690;
-  animation: type 1.7s 2.8s forwards;
+  animation: type 1.7s 4.8s forwards;
 }
 
 .cursor3 {
-  animation: blink 0.7s 1.8s infinite forwards;
+  animation: blink 0.7s 2.8s infinite forwards;
 }
 
 .line4 {
   color: #fff;
-  animation: type 1.7s 3.8s forwards;
+  animation: type 1.7s 4.8s forwards;
 }
 
 .cursor4 {
-  animation: blink 1s 8.5s infinite;
+  animation: blink 1s 9.5s infinite;
 }
 
 @keyframes blink {
