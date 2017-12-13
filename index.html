@@ -5,13 +5,14 @@
   <title>OSDConf</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="main">
 
     <div class="overlay">
       <img src="assets/images/osdpng.png" height="229px" width="358.5px">
-      <form>
+      <form action="main.html">
         <button class="proceed" type="submit">Jump In</button>
       </form>
     </div>
@@ -24,17 +25,22 @@
           </button>
           <button class="maximize">
           </button>
-          <span class="session">~osdconf/home</span>
+          <span class="session">/home/osdconf/</span>
       </div>
 
       <div class="terminal">
-        <p class="line1">$&nbsp;Welcome to OSDCONF<span class="cursor1">_</span></p>
-        <p class="line2">&nbsp;>&nbsp;Loading assets...<span class="cursor2">_</span></p>
-        <p class="line3">$&nbsp;"A Two Day Conference"<span class="cursor3">_</span>
+        <p class="line1">$ Welcome to OSDCONF<span class="cursor1">_</span></p>
+        <p class="line2">&nbsp;>Loading assets...<span class="cursor2">_</span></p>
+        <p class="line3">$ loop info<span class="cursor2">_</span></p>
+        <p class="line4">&nbsp;> Permission denied</p>
+        <p class="line5">$ sudo loop info<span class="cursor4">_</span></p>
+        <div id="line3"></div>        
       </div>
-
-    </div>
-
   </div>
+  <button class="skip"><a href="main.html"><i class="fa fa-fast-forward" aria-hidden="true"></i></a></button>
+</div>
+
+  <script type="text/javascript" src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+  <script type="text/javascript" src="assets/scripts/type.js"></script>
 </body>
 </html>
