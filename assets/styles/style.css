@@ -2,6 +2,7 @@ body {
   margin: 0;
   background: #1CB5E2;
   background-image: -webkit-radial-gradient(bottom, circle cover, #1CB5E2 0%, #000060 100%);
+  background-image: radial-gradient(bottom, circle cover, #1CB5E2 0%, #000060 100%);
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -27,7 +28,7 @@ body {
   visibility: hidden;
   color: white;
   animation: appear 870ms ease-in-out 1 forwards;
-  animation-delay: 20000ms;
+  animation-delay: 4.5s;
   font-size: 40px;
   transition: all 870ms ease-in-out;
 }
@@ -160,7 +161,6 @@ p {
   min-width: 80vw;
   border-radius: 7px;
   box-shadow: 2px 11px 17px rgba(0, 0, 0, 0.48);
-
 }
 
 .session {
@@ -208,16 +208,22 @@ p {
 
 .skip {
   border: 0;
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
+  height: 40px;
+  width: 145px;
   background-color: rgba(0,0,0,0.78);
-  font-size: 15px;
+  font-size: 17px;
   color: white;
   position: absolute;
   top: 85%;
   right: 10vw;
+  font-family: 'Roboto',sans-serif;
   box-shadow: 2px 11px 17px rgba(0, 0, 0, 0.48);
+}
+
+.skip a {
+  text-decoration: none !important;
+  color: white;
+  opacity: 0.85;  
 }
 
 .close {
@@ -237,6 +243,50 @@ p {
 
 .cursor1 {
   animation: blink 0.7s 0.8s 3 forwards;
+}
+
+.line {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: baseline;
+  font-family: 'Source Code Pro',serif;
+  font-size: 14px;
+}
+
+
+.dollar {
+  font-size: 17px;
+}
+
+.dollar1 {
+  visibility: hidden;
+  animation: dollar_appear 10ms linear forwards;
+  animation-delay: 2.6s;
+  color: #CDEE69;
+}
+
+.result {
+  margin-left: 10px;
+  color: white;
+  font-family: 'Source Code Pro',serif;
+  font-size: 17px;
+  color: #E09690;
+  visibility: hidden;
+  animation: result_appear 10ms linear 1 forwards;
+  animation-delay: 4s;  
+}
+
+@keyframes result_appear {
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes dollar_appear {
+  to {
+    visibility: visible;
+  }
 }
 
 .line2 {
@@ -298,7 +348,11 @@ p {
 }
 
 @keyframes type {
-  to {
+  0% {
+    width: 0;
+  }
+
+  100% {
     width: 22em;
   }
 }
