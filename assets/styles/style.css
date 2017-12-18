@@ -27,8 +27,8 @@ body {
   flex-direction: column;
   visibility: hidden;
   color: white;
-  animation: appear 870ms ease-in-out 1 forwards;
-  animation-delay: 4.5s;
+  animation: appear 770ms ease-in 1 forwards;
+  animation-delay: 8.6s;
   font-size: 40px;
   transition: all 870ms ease-in-out;
 }
@@ -54,75 +54,6 @@ body {
   cursor: pointer;
 }
 
-@-webkit-keyframes appear {
-  0% {
-    height: 0vh;
-    width: 0%;
-    visibility: hidden;
-    background: transparent;
-  }
-  
-  50% {
-    height: 0vh;
-    width: 0%;
-    visibility: hidden;
-    background: rgba(0,0,0,0.80);
-  }
-
-  100% {
-    height: 100vh;
-    width: 100%;
-    visibility: visible;
-    background: rgba(0,0,0,0.0);
-  }
-}
-
-@-moz-keyframes appear {
-  0% {
-    height: 0vh;
-    width: 0%;
-    visibility: hidden;
-    background: transparent;
-  }
-  
-  50% {
-    height: 0vh;
-    width: 0%;
-    visibility: hidden;
-    background: rgba(0,0,0,0.80);
-  }
-
-  100% {
-    height: 100vh;
-    width: 100%;
-    visibility: visible;
-    background: rgba(0,0,0,0.80);
-  }
-}
-
-@-o-keyframes appear {
-  0% {
-    height: 0vh;
-    width: 0%;
-    visibility: hidden;
-    background: transparent;
-  }
-  
-  50% {
-    height: 0vh;
-    width: 0%;
-    visibility: hidden;
-    background: rgba(0,0,0,0.80);
-  }
-
-  100% {
-    height: 100vh;
-    width: 100%;
-    visibility: visible;
-    background: rgba(0,0,0,0.80);
-  }
-}
-
 @keyframes appear {
   0% {
     height: 0vh;
@@ -146,49 +77,14 @@ body {
   }
 }
 
-p {
-  position: relative;
-  text-align: left;
-  font-size: 1.25em;
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-}
-
-.screen {
-  min-height: 50vh;
-  min-width: 80vw;
-  border-radius: 7px;
-  box-shadow: 2px 11px 17px rgba(0, 0, 0, 0.48);
-}
-
-.session {
-  position: absolute;
-  text-align: center;
-  font-family: 'Source Code Pro',sans-serif;
-  left: 42%; 
-}
-
-.terminal {
-  min-height: 60vh;
-  min-width: 80vw;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 200;
-  font-size: 14px;
-  padding: 14px;
-  color: white;
-  background: rgba(0,0,0,0.84);
-}
-
 
 .navbar {
   height: 4vh;
   padding-left: 5px;
   background: rgba(0,0,0,0.89);
   color: #eeeeee;
+  font-family: monospace;
+  font-size: 14px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
@@ -236,97 +132,162 @@ p {
   background-color: #25cc3e;
 }
 
+p {
+  position: relative;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.screen {
+  min-height: 50vh;
+  min-width: 80vw;
+  border-radius: 7px;
+  box-shadow: 2px 11px 17px rgba(0, 0, 0, 0.48);
+}
+
+.session {
+  position: absolute;
+  text-align: center;
+  font-family: monospace;
+  left: 42%; 
+}
+
+.terminal {
+  min-height: 60vh;
+  min-width: 80vw;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: monospace;
+  font-weight: 200;
+  font-size: 14px;
+  padding: 14px;
+  color: white;
+  background: rgba(0,0,0,0.84);
+}
+
+.line {
+  display: flex;
+  margin-bottom: -10px;
+  margin-top: -10px;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: baseline;
+  font-weight: 200;
+  font-size: 14px;
+}
+
 .line1 {
   color: #9CD9F0;
   animation: type 1.3s 1s forwards;
 }
 
-.cursor1 {
-  animation: blink 0.7s 0.8s 3 forwards;
-}
-
-.line {
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: baseline;
-  font-family: 'Source Code Pro',serif;
-  font-size: 14px;
-}
-
-
-.dollar {
-  font-size: 17px;
-}
-
-.dollar1 {
-  visibility: hidden;
-  animation: dollar_appear 10ms linear forwards;
-  animation-delay: 2.6s;
-  color: #CDEE69;
-}
-
-.result {
-  margin-left: 10px;
-  color: white;
-  font-family: 'Source Code Pro',serif;
-  font-size: 17px;
-  color: #E09690;
-  visibility: hidden;
-  animation: result_appear 10ms linear 1 forwards;
-  animation-delay: 4s;  
-}
-
-@keyframes result_appear {
-  to {
-    visibility: visible;
-  }
-}
-
-@keyframes dollar_appear {
-  to {
-    visibility: visible;
-  }
-}
-
 .line2 {
   color: #CDEE69;
-  animation: type 1.3s 2.8s forwards;
-}
-
-.cursor2 {
-  animation: blink 0.7s 2.0s 3 forwards;
+  animation: type 20ms 2.3s linear forwards;
 }
 
 .line3 {
   color: #E09690;
-  animation: type 1.2s 4.8s forwards;
+  animation: type 1.2s 3.2s forwards;
+}
+
+.line4 {
+  color: red;
+  animation: type 20ms 4.5s forwards;
+}
+
+.line5 {
+  color: #E09690;
+  animation: type 1.2s 5.1s forwards;
+}
+
+.line6 {
+  color: #9CD9F0;
+  animation: type 20ms 6.1s forwards;
+}
+
+.line7 {
+  color: #E09690;
+  animation: type 1.2s 7s forwards;
+}
+
+.line8 {
+  color: #9CD9F0;
+  animation: type 20ms 8s forwards;
+}
+
+.cursor1 {
+  animation: blink 0.6s 0.8s 2 forwards;
 }
 
 .cursor3 {
   animation: blink 0.7s 2.8s 2 forwards;
 }
 
-.line4 {
-  color: red;
-  animation: type 100ms 6s forwards;
-}
-
 .cursor4 {
-  animation: blink 1s 3.8s 3 forwards;
+  animation: blink 0.5s 5s 2 forwards;
 }
 
-.line5 {
-  color: #E09690;
-  animation: type 1.2s 7.8s forwards;
+.cursor5 {
+  animation: blink 0.5s 6.8s 2 forwards;
 }
 
-#line3 {
-  margin-left: 20px;
-  font-family: 'Source Code Pro',monospace;
-  font-size: 19px;
-  font-weight: 400;
+.dollar {
+  font-family: monospace;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.dollar1 {
+  visibility: hidden;
+  animation: dollar_appear 10ms linear forwards;
   color: #9CD9F0;
+}
+
+.dollar2 {
+  visibility: hidden;
+  animation: dollar_appear 10ms linear forwards;
+  animation-delay: 2.3s;
+  color: #E09690;
+}
+
+.dollar3 {
+  visibility: hidden;
+  animation: dollar_appear 10ms linear forwards;
+  animation-delay: 4.5s;
+  color: #CDEE69;
+}
+
+.dollar4 {
+  visibility: hidden;
+  animation: dollar_appear 10ms linear forwards;
+  animation-delay: 4.5s;
+  color: #E09690;
+}
+
+.dollar5 {
+  visibility: hidden;
+  animation: dollar_appear 10ms linear forwards;
+  animation-delay: 6.1s;
+  color: #CDEE69;
+}
+
+.dollar6 {
+  visibility: hidden;
+  animation: dollar_appear 10ms linear forwards;
+  animation-delay: 6.1s;
+  color: #E09690;
+}
+
+.dollar7 {
+  visibility: hidden;
+  animation: dollar_appear 10ms linear forwards;
+  animation-delay: 8s;
+  color: #CDEE69;
 }
 
 @keyframes blink {
@@ -353,17 +314,21 @@ p {
   }
 
   100% {
-    width: 22em;
+    width: 40em;
   }
 }
 
-.dollar {
-  font-size-adjust: 20px;
+
+@keyframes result_appear {
+  to {
+    visibility: visible;
+  }
 }
 
-.element 
-{
-  height: 40px;
+@keyframes dollar_appear {
+  to {
+    visibility: visible;
+  }
 }
 
 /* media queries */
@@ -389,4 +354,3 @@ p {
     width: 300.5px;
   }
 }
-
