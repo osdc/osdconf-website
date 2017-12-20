@@ -1,297 +1,70 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <title>OSDConf 2014</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-    <!-- Enabling responsiveness  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSDConf</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="container">
-    <main>
+  <div class="main">
 
-        <nav class="navbar-default navbar-fixed-top" role="navigation">
-        <ul class="list-inline text-center menu-bar">
+    <div class="overlay">
+      <img src="assets/images/osdpng.png" height="229px" width="358.5px">
+      <form action="main.html">
+        <button class="proceed" type="submit">Jump In</button>
+      </form>
+    </div>
 
-                  <li><a href="#about">ABOUT</a></span></li>
-                  <li><a href="#speakers">SCHEDULE</a></span></li>
-                  <li><a href="#sponsors">SPONSORS</a></span></li>
-                  <li><a href="#register">REGISTER</a></span></li>
-                  <li><a href="#venue">VENUE</a></span></li>
-                  <li><a onclick=window.open("https://docs.google.com/file/d/0B_8cThvSzWuNMUUydnZERG9QSUE/edit?pli=1")>FAQ</a></span></li>
+    <div class="screen">
+      <div class="navbar">
+          <button class="close">
+          </button>
+          <button class="minimize">
+          </button>
+          <button class="maximize">
+          </button>
+          <span class="session">/home/osdconf/</span>
+      </div>
 
-        </ul>
-        </nav>
-
-    	<div class="row">
-    	<div class="col-xs-2 hidden-md hidden-lg">
-    	</div>
-    	<div class="col-md-offset-2 col-md-8 col-xs-8">
-    		<div class="content">
-
-    		<!--
-            <ul id="menu-bar">
-                <div style="padding-top:15px;">
-                </div>
-            </ul>
-			-->
-        <div id="flag">
-            <div id="osdconf-logo">
-                <span id="logo-part1">Open</span>
-                <span id="logo-part2">Source</span><br>
-                <span id="logo-part3">Developers</span>
-                <span id="logo-part4">Conference</span>
-            </div>
-            <div id="date-venue">
-                <span>&#9733; April 26-27th, Noida &#9733;</span>
-            </div>
+      <div class="terminal">
+        <div class="line">
+          <span class="dollar dollar1">$</span><p class="line1">&nbsp;Welcome to OSDConf<span class="cursor1">_</span> </p>
         </div>
-        
 
-        <section class="main-content" id="about">
-            <h2 class="lead">About OSDConf</h2>
-            <p>OSDConf aims to be a gathering of people who are interested in sharing their experience with open-source software, people who want to listen to others' experiences and learn from them and people who want to exchange ideas with others having similar interests and maybe hack on them together during the course of two days.</p>
-            <img src="img/osscamp1.jpg">
-        </section>
-        <section class="main-content" id="speakers">
-            <h2 class="lead"> Schedule </h2>
-            <h3> DAY 1</h3>
-            <table class="tableizer-table">
-              <tr class="tableizer-firstrow">
-                <th>Saturday, 26th April (Day 1)</th>
-                <th>Audi 1 (LT-5)</th>
-                <th>Audi 2 (G-13)</th>
-                <th>Audi 3 (Main Audi)</th>
-              </tr>
-              <tr>
-                <td>09:00</td>
-                <td colspan="2">Registration and speaker lounge open</td>
-                <td rowspan="3">Open Spaces</td>
-              </tr>
-              <tr>
-                <td>09:00 - 11:00</td>
-                <td colspan="2">Registration and Introductions</td>
-              </tr>
-              <tr>
-                <td>11:00 - 11:45</td>
-                <td colspan="2">Keynote Session By Hari Prasanna and Pranav Prakash (Engineers at Slideshare (Acquired by LinkedIn).</td>
-              </tr>
-              <tr>
-                <td>11:45 - 12:00</td>
-                <td colspan="2">Break</td>
-                <td>&nbsp;</td>
-              </tr>
-              <!-- <tr>
-                <td>11:00 - 11:45</td>
-                <td> <a href="http://osdconf.in/funnel/osdconf14/2-telling-our-story-selling-open-source-on-the-big-s"> Telling our story: Selling open source on the big stage </a> </td>
-                <td> <a href ="http://osdconf.in/funnel/osdconf14/19-video-games-and-open-source">Video Games and Open Source -  Naman Gupta </a></td>
-                <td rowspan="3">Open Spaces</td>
-              </tr> -->
-              <tr>
-                <td>11:45 - 12:30</td>
-                <td> <a href="http://osdconf.in/funnel/osdconf14/4-creating-your-own-android-library-and-documenting-"> Creating your own Android library and documenting it with Javadocs </a></td>
-                <td><a href="http://osdconf.in/funnel/osdconf14/22-building-scalable-web-applications-on-cloud-platfo">Building scalable web applications on cloud platform</a></td>
-              </tr>
-              <tr>
-                <td>12:30 - 13:15</td>
-                <td> <a href ="http://osdconf.in/funnel/osdconf14/19-video-games-and-open-source">Video Games and Open Source -  Naman Gupta </a></td>
-                <td><a href="http://osdconf.in/funnel/osdconf14/15-hardware-hacking">Hardware hacking </a></td>
-              </tr>
-              <tr>
-                <td>13:15 - 14:15</td>
-                <td colspan="2">Lunch</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>14:15 - 15:00</td>
-                <td>Sponsored Session by Innovaccer - Introduction to Data Science by Kanav Hasija</td>
-                <td><a href="http://osdconf.in/funnel/osdconf14/11-ibeacons-and-the-internet-of-things">iBeacons and the internet of things</a></td>
-                <td rowspan="3">Open Spaces</td>
-              </tr>
-              <tr>
-                <td>15:00 - 15:45</td>
-                <td><a href="http://osdconf.in/funnel/osdconf14/1-device-driver-for-linux">Device Driver for linux </a></td>
-                <td><a href="http://osdconf.in/funnel/osdconf14/14-getting-started-with-angularjs">Getting started with AngularJS</a></td>
-              </tr>
-              <tr>
-                <td>15:45 - 16:30</td>
-                <td><a href="http://osdconf.in/funnel/osdconf14/9-introduction-to-web-scraping-in-python">Introduction to Web Scraping in Python - Saurav Tomar</a></td>
-                <td>&nbsp;</td>
-              </tr>
-          </table>
+        <div class="line">
+          <p class="line2">&nbsp;&nbsp;> fetching event details...</p>
+        </div>
 
-          <h3> Day 2 </h3>
+        <div class="line">
+          <span class="dollar dollar2">$</span><p class="line3">&nbsp;whoami<span class="cursor3">_</span></p>
+        </div>
 
-          <table class="tableizer-table">
+        <div class="line">
+          <span class="dollar dollar3">&nbsp;&nbsp;></span><p class="line4">&nbsp;OSDConf 18</p>
+        </div>
 
-            <tr class="tableizer-firstrow">
-              <th>Sunday, 27th April (Day 2)</th>
-              <th>Audi 1 (LT)</th>
-              <th>Audi 2 (LT)</th>
-              <th>Audi 3 (Main Audi)</th>
-            </tr>
+        <div class="line">
+          <span class="dollar dollar4">$</span><p class="line5">&nbsp;date<span class="cursor4">_</span></p>
+        </div>
 
-            <tr>
-              <td>09:00</td>
-              <td colspan="2">Registration and speaker lounge open</td>
-              <td rowspan="3">Open Spaces</td>
-            </tr>
-            <tr>
-              <td>09:00 - 10:00</td>
-              <td colspan="2">Registration and Introductions</td>
-            </tr>
-            <tr>
-              <td>10:00 - 10:45</td>
-              <td colspan="2">Keynote Session By Piyush Kumar (Lead of Infrastructure and Website Operations at MakeMyTrip)</td>
-            </tr>
-            <tr>
-              <td>10:45 - 11:00</td>
-              <td colspan="2">Break</td>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>11:00 - 11:45</td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/20-gnome">GNOME</a></td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/18-rip-android-with-web-services">RIP Android with Web Services</a></td>
-              <td rowspan="3">Open Spaces</td>
-            </tr>
-            <tr>
-              <td>11:45 - 12:30</td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/24-an-intro-to-open-source-telephony">An intro to Open Source Telephony</a></td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/25-numberscape-the-landscape-of-open-source-languages">Numberscape - The landscape of open-source languages and tools for computational math</a></td>
-            </tr>
-            <tr>
-              <td>12:30 - 13:15</td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/21-perfect-recipe-for-data-wrangling-ipython-notebook">Perfect recipe for data wrangling : IPython Notebook+ Pandas + Visualizations !</td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/16-happy-go-programming">Happy Go Programming</a></td>
-            </tr>
-            <tr>
-              <td>13:15 - 14:15</td>
-              <td colspan="2">Lunch</td>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>14:15 - 15:00</td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/23-avoiding-single-point-of-failures-in-a-multi-servi">Avoiding single point of failures in a multi-services architecture</a></td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/8-machine-learning-with-apache-mahout-and-scala">machine Learning with Apache Mahout and Scala</a></td>
-              <td rowpan="2">Open Spaces</td>
-            </tr>
-            <tr>
-              <td>15:00 - 15:45</td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/6-github-dont-get-scared-get-started">GitHub: Don't get scared, get started.</a></td>
-              <td><a href="http://osdconf.in/funnel/osdconf14/13-building-your-own-drupal-distribution">Building Your Own Drupal Distribution</a></td>
-              <td></td>
-            </tr>
-          </table>
-        </section>
+        <div class="line">
+          <span class="dollar dollar5">&nbsp;&nbsp;></span><p class="line6">&nbsp;11-12 march 2018</p>
+        </div>
 
-        <section class="main-content" id="sponsors">
-             <h2 class="lead"> Sponsors </h2>
-             <div class="sponsors-section row">
-               <div class="sponsorship-type col-md-4">
-                 <h3>Freedom Sponsor</h3>
-               </div>
-               <div class="col-md-">
-                <div class="sponsors-list">
-                  <div class="sponsor-detail">
-                    <a href="http://www.zomato.com/"><img class="sponsor-image" src="img/zomato.png"></a>
-                   </div>
-                </div>
-               </div>
+        <div class="line">
+          <span class="dollar dollar6">$</span><p class="line7">&nbsp;locate osdconf<span class="cursor5">_</span></p>
+        </div>
 
-              <div class="sponsorship-type col-md-4">
-                 <h3>Other Sponsors</h3>
-              </div>
-              <div class="col-md-8">
-                <div class="sponsors-list">
-                  <div class="sponsor-detail">
-                    <a href="http://www.wingify.com/"><img class="sponsor-image" src="img/Wingify.png"></a>
-                  </div>
-                </div>
-                <div class="sponsors-list">
-                  <div class="sponsor-detail">
-                    <a href="http://www.innovaccer.com/"><img class="sponsor-image" src="img/innovaccer.png"></a>
-                   </div>
-                </div>
-                <div class="sponsors-list">
-                  <div class="sponsor-detail">
-                    <a href="http://www.pixpa.com/"><img class="sponsor-image" src="img/pixpa.png"></a>
-                   </div>
-                </div>
-               </div>
-
-
-            </div>
-             <p>If you want to help us with sponsorship and make the conference a smashing success, please <a href="mailto:contact@osdconf.in">get in touch</a> with us.</p>
-        </section>
-        <section class="main-content" id="register">
-              <h2 class="lead"> Registrations </h2>
-              <p>
-              <iframe id='ifrm' name='ifr' class="well" src='http://doattend.com/embed_ticket/38029' scrolling='no' width='100%' height='350' frameborder="0" seamless>
-                  Oops!! Sorry you will have to <a href = 'http://osdconf.doattend.com'>register here</a></iframe>
-              </p>
-        </section>
-
-        <section class="main-content" id="venue">
-              <h2 class="lead"> Venue </h2>
-              <h3> Host Venue </h3>
-              <p> Jaypee Institute of Information Technology <br>
-                  Other Cybersristi events organized at host venue:
-                  <a href="http://www.jiit.ac.in/jiit/cybersrishti/website.html" target="_">http://www.jiit.ac.in/jiit/cybersrishti/website.html</a></p>
-              <h3> Address </h3>
-              <p> Jaypee Institute of Information Technology <br>
-                A-10,Sector-62 <br>
-                Noida-201 307<br>
-                Uttar Pradesh 201307
-              </p>
-              <h5> LandMark </h5>
-              <span id="landmark"> Near Noida Expo Center </span>
-              <div id="map-canvas"/></div>
-        </section>
+        <div class="line">
+          <span class="dollar dollar7">&nbsp;&nbsp;></span><p class="line8">&nbsp;Jaypee Institute of information technology,sec-62 Noida</p>
+        </div> 
+             
       </div>
     </div>
-    </div>
-    </main>
-    <footer>
-        <hr>
-        <div id="osdc-logo">
-            <a href="http://osdc.github.io" target='_blank'><img src="img/logo.png" alt="logo"></a>
-        </div>
-    </footer>
+    <button class="skip"><a href="main.html">Skip intro <i class="fa fa-fast-forward" aria-hidden="true"></i></a></button>
+  </div>
 
-
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtnTt4diLgTb8nC0P9FCFttB2GgdHLGqk&sensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var JIIT = new google.maps.LatLng(28.630298, 77.372050);
-        var mapOptions = {
-          center: JIIT,
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-
-        var marker= new google.maps.Marker({
-          position: JIIT,
-          map: map,
-          title: "Jaypee Institute of Information Technology"
-
-        });
-
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
-    <!--<script src="js/bootstrap.min.js"></script>-->
-    <script src="js/home.js"></script>
-<div>
 </body>
 </html>
