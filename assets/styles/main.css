@@ -101,7 +101,7 @@ body {
 
 .main {
 	min-height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 	display: flex;
 	border-bottom: 1px solid grey; 
 }
@@ -383,69 +383,6 @@ body {
 	width: 0;
 }
 
-/* media queries */
-
-@media only screen and (max-width: 937px) {
-
-	.pot, .notebook, .cleanup, .calci, .pen {
-		display: none;
-	}
-
-	.cup {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 110px;
-		width: 120px;
-		right: 5vw;
-		background-size: auto 110px;
-	}
-
-	.specs {
-		display: none;
-	}
-
-	.pad {
-		width: 150px;
-	}
-
-	.notepad {
-		height: 200px;
-		width: 210px;
-		background-size: auto 200px;
-	}
-
-	.phone {
-		top: 60vh;
-		height: 120px;
-		width: 130px;
-		background-size: auto 120px;	
-	}
-
-	.writeup {
-		left: 5vh;
-		top: 50vh;
-		font-size: 40px;
-	}
-
-	.laptop {
-		height: 300px;
-		width: 290px;
-		background-size: auto 300px;
-	}
-
-	.terminal {
-		width: 0;
-	}
-
-	.lo {
-		font-size: 17px;
-	}
-
-	.testtext {
-		margin-right: 10px;
-	}
-}
 
 .aterminal {
 	position: fixed;
@@ -542,7 +479,72 @@ body {
 
 .line6 {
 	color: #E09690;
-}	
+}
+
+/* media queries */
+
+@media only screen and (max-width: 937px) {
+
+	.pot, .notebook, .cleanup, .calci, .pen {
+		display: none;
+	}
+
+	.cup {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 110px;
+		width: 120px;
+		right: 5vw;
+		background-size: auto 110px;
+	}
+
+	.specs {
+		display: none;
+	}
+
+	.pad {
+		width: 150px;
+	}
+
+	.notepad {
+		height: 200px;
+		width: 210px;
+		background-size: auto 200px;
+	}
+
+	.phone {
+		top: 60vh;
+		height: 120px;
+		width: 130px;
+		background-size: auto 120px;	
+	}
+
+	.writeup {
+		left: 5vh;
+		top: 50vh;
+		font-size: 40px;
+	}
+
+	.laptop {
+		height: 300px;
+		width: 290px;
+		background-size: auto 300px;
+	}
+
+	.terminal {
+		width: 0;
+	}
+
+	.lo {
+		font-size: 17px;
+	}
+
+	.testtext {
+		margin-right: 10px;
+	}
+}
+
 
 @media only screen and (max-width: 607px) {
 	.aterminal {
