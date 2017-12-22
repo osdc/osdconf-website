@@ -93,6 +93,15 @@ $(window).scroll(function(){
   if(wScroll > $('.about').offset().top - 500){
     $('.test').addClass('showing');
     $('.testtext').addClass('showingtext');
+
+    if(wScroll > $('.speakers').offset().top - 380){
+      $('.speakers-head').addClass('speakers-head-show');
+      $('.speaker-card').each(function(i){
+        setTimeout(function(){
+          $('.speaker-card').eq(i).addClass('speaker-card-show');
+        },300 * (i+1));
+      });
+    }
   }
 
 });

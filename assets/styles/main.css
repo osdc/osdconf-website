@@ -315,6 +315,7 @@ body {
 	margin-right: 180px;
 	opacity: 0;
 	transform: translateY(150px);
+	color: #455a64;
 	transition: all 800ms ease-in;	
 }
 
@@ -494,6 +495,92 @@ body {
 	color: #E09690;
 }
 
+.speakers {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid grey;
+}
+
+.speakers-head {
+	font-size: 40px;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 400;
+	position: relative;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 700ms ease-in;
+	padding-bottom: 10px;
+	border-bottom : 2px solid #008BFF;
+	transition: all 500ms ease-in;
+}
+
+.speakers-head-show {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.speakers-body {
+	min-height: 380px;
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+	flex-wrap: wrap;
+}	
+
+.speaker-card {
+	min-height: 450px;
+	width: 300px;
+	margin: 15px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow:0 4px 7px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.1) inset;
+	opacity: 0;
+	transform: translateX(-150px);
+	transition: all 0.3s ease-in-out;
+}
+
+.speaker-card-show {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.keynote-name {
+	color: #008BFF;
+	font-size: 25px;
+	margin-top: 7px;
+}
+
+.keynote-desc {
+	min-height: 100px;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 100;
+	padding: 10px;
+	font-size: 15px;
+	color: #455a64;
+}
+
+.keynote-links {
+	margin: 10px;
+}
+
+.keynote-links a {
+	color: black;
+	text-decoration: none;
+}
+
+.twitter:hover {
+	color: #008BFF;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 937px) {
@@ -574,6 +661,10 @@ body {
 
 	.testtext {
 		font-size: 17px;
+	}
+
+	.speakers-body {
+		border: 1px solid #008BFF;
 	}
 }
 

@@ -43,8 +43,8 @@
     </div>
     <div class="nav">
       <a data-scroll href="#home"><p class="line1">$ Home</p></a>
-      <p class="line2">&nbsp;>Agenda...</p>
-      <p class="line3">$ Speakers</p>
+      <a data-scroll href="#agenda"><p class="line2">&nbsp;>Agenda...</p></a>
+      <a data-scroll href="#speakers-section"><p class="line3">$ Speakers</p></a>
       <p class="line4">$ Sponsors</p>
       <a href="#"><p class="line5">$ Venue</p></a>
       <a href="#"><p class="line6">$ Contact_us</p></a>
@@ -69,11 +69,43 @@
 		</div>
 	</div>
 
-	<section class="about"  onclick="validatenav()">
-		<div class="test">What is it about?</h1></div>
-		<hr>
+	<section class="about" onclick="validatenav()" id="agenda">
+		<div class="test">What is it about?</div>
+    <br>
 		<span class="testtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Nulla iaculis sapien vel urna varius consequat. Aenean lorem lorem, pharetra et nibh id, commodo vestibulum erat. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis. Suspendisse et odio sit amet mi gravida fermentum non at sem. Vestibulum varius purus justo, congue semper enim ultricies quis. Nunc commodo, augue sed rhoncus mattis, neque metus blandit tortor, a lacinia arcu mauris in nisi</span>
 	</section>
+
+  <!-- Speakers Section -->
+
+  <section class="speakers" onclick="validatenav()" id="speakers-section">
+    <div class="speakers-head">Keynote Speakers</div>
+    <div class="speakers-body">
+      <div class="speaker-card">
+        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
+        <span class="keynote-name">Saransh Barua</span>
+        <span class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis.</span>
+        <span class="keynote-links"><a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-github fa-lg"></i></a></span>
+      </div>
+      
+      <div class="speaker-card">
+        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
+        <span class="keynote-name">Saransh Barua</span>
+        <span class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis.</span>
+        <span class="keynote-links"><a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-github fa-lg"></i></a></span>
+      </div>
+
+      <div class="speaker-card">
+        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
+        <span class="keynote-name">Saransh Barua</span>
+        <span class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis.</span>
+        <span class="keynote-links"><a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-github fa-lg"></i></a></span>
+      </div>
+
+    </div>
+    <span style="margin-top: 15px;">View the full list of speakers <a href="#" style="text-decoration: none; color: #008BFF">here</a></span>
+  </section>
+
+  <div class="main"></div>
 
 	<!--Scripts-->
 
