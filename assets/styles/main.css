@@ -290,9 +290,9 @@ body {
 	min-height: 45vh;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	flex-direction: column;
-	padding: 80px;
+	padding: 90px;
 	border-bottom: 1px solid grey;
 }
 
@@ -300,7 +300,6 @@ body {
 	font-size: 40px;
 	font-family: 'Roboto',sans-serif;
 	font-weight: 400;
-	position: relative;
 	opacity: 0;
 	transform: translateX(-150px);
 	transition: all 700ms ease-in;
@@ -311,8 +310,6 @@ body {
 .testtext {
 	font-family: 'Roboto',sans-serif;
 	font-weight: 100;
-	position: relative;
-	margin-right: 180px;
 	opacity: 0;
 	transform: translateY(150px);
 	color: #455a64;
@@ -323,7 +320,6 @@ body {
 	transform: translateX(0px);
 	opacity: 1;
 }
-
 
 .showingtext {
 	transform: translateY(0px);
@@ -548,6 +544,10 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 
+.speaker-card:hover {
+	box-shadow:0 1px 6px 4px rgba(0, 0, 0, 0.3);
+}
+
 .speaker-card-show {
 	opacity: 1;
 	transform: translateX(0px);
@@ -563,7 +563,7 @@ body {
 	min-height: 100px;
 	font-family: 'Roboto',sans-serif;
 	font-weight: 100;
-	padding: 10px;
+	padding: 17px;
 	font-size: 15px;
 	color: #455a64;
 }
