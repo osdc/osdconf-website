@@ -563,6 +563,18 @@ body {
 	.aterminal {
 		display: none;
 	}
+
+	.about {
+		padding: 25px;
+	}
+
+	.text {
+		font-size: 25px;
+	}
+
+	.testtext {
+		font-size: 17px;
+	}
 }
 
 @media only screen and (min-width: 607px) {
