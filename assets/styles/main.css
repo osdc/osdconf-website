@@ -395,6 +395,16 @@ body {
 	transition: transform 400ms ease-in-out;
 }
 
+#cross {
+	display: none;
+	color:#37474f;
+	font-size: 10px;
+}
+
+.aterminal:hover #cross {
+	display: block;
+}
+
 .navbar {
   height: 4vh;
   padding-left: 5px;
@@ -443,7 +453,10 @@ body {
 }
 
 .close {
-  background-color: #ff6159;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ff6159;
 }
 
 .close:hover {
