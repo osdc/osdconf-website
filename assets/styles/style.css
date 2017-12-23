@@ -46,9 +46,11 @@ body {
   z-index: 100;
   margin-bottom: 40px;
   border: 2px solid white;
+  transition-duration: 0.5s;
 }
 
 .proceed:hover {
+  width: 200px;
   background-color: white;
   color: #0288d1;
   cursor: pointer;
