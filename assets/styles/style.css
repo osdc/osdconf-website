@@ -46,9 +46,11 @@ body {
   z-index: 100;
   margin-bottom: 40px;
   border: 2px solid white;
+  transition-duration: 0.5s;
 }
 
 .proceed:hover {
+  width: 200px;
   background-color: white;
   color: #0288d1;
   cursor: pointer;
@@ -103,23 +105,25 @@ body {
 }
 
 .skip {
-  border: 0;
+  border: none;
   height: 40px;
   width: 145px;
   background-color: rgba(0,0,0,0.78);
   font-size: 17px;
+  text-align: center;
+  line-height: 40px;
   color: white;
   position: absolute;
   top: 85%;
   right: 10vw;
   font-family: 'Roboto',sans-serif;
   box-shadow: 2px 11px 17px rgba(0, 0, 0, 0.48);
+  text-decoration: none !important;
+  opacity: 0.85;
 }
 
-.skip a {
-  text-decoration: none !important;
-  color: white;
-  opacity: 0.85;  
+.skip:hover {
+  opacity: 1;
 }
 
 .close {
