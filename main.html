@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>OSDConf</title>
   	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -43,8 +44,8 @@
     </div>
     <div class="nav">
       <a data-scroll href="#home"><p class="line1">$ Home</p></a>
-      <p class="line2">&nbsp;>Agenda...</p>
-      <p class="line3">$ Speakers</p>
+      <a data-scroll href="#agenda"><p class="line2">&nbsp;>Agenda...</p></a>
+      <a data-scroll href="#speakers-section"><p class="line3">$ Speakers</p></a>
       <p class="line4">$ Sponsors</p>
       <a href="#"><p class="line5">$ Venue</p></a>
       <a href="#"><p class="line6">$ Contact_us</p></a>
@@ -69,11 +70,43 @@
 		</div>
 	</div>
 
-	<section class="about"  onclick="validatenav()">
-		<div class="test">What is it about?</h1></div>
-		<hr>
+	<section class="about" onclick="validatenav()" id="agenda">
+		<p class="test">What is it about?</p>
+    <br>
 		<span class="testtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Nulla iaculis sapien vel urna varius consequat. Aenean lorem lorem, pharetra et nibh id, commodo vestibulum erat. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis. Suspendisse et odio sit amet mi gravida fermentum non at sem. Vestibulum varius purus justo, congue semper enim ultricies quis. Nunc commodo, augue sed rhoncus mattis, neque metus blandit tortor, a lacinia arcu mauris in nisi</span>
 	</section>
+
+  <!-- Speakers Section -->
+
+  <section class="speakers" onclick="validatenav()" id="speakers-section">
+    <p class="speakers-head">Keynote Speakers</p>
+    <div class="speakers-body">
+      <div class="speaker-card">
+        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
+        <span class="keynote-name">Saransh Barua</span>
+        <p class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis.</p>
+        <span class="keynote-links"><a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;<a href="#" class="linkedin"><i class="fa fa-linkedin-square fa-lg"></i></a></span>
+      </div>
+      
+      <div class="speaker-card">
+        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
+        <span class="keynote-name">Saransh Barua</span>
+        <p class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis.</p>
+        <span class="keynote-links"><a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;<a href="#" class="linkedin"><i class="fa fa-linkedin-square fa-lg"></i></a></span>
+      </div>
+
+      <div class="speaker-card">
+        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
+        <span class="keynote-name">Saransh Barua</span>
+        <p class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis.</p>
+        <span class="keynote-links"><a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;<a href="#" class="linkedin"><i class="fa fa-linkedin-square fa-lg"></i></a></span>
+      </div>
+
+    </div>
+    <span style="margin-top: 15px;">View the full list of speakers <a href="#" style="text-decoration: none; color: #008BFF">here</a></span>
+  </section>
+
+  <div class="main"></div>
 
 	<!--Scripts-->
 

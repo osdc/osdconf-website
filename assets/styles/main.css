@@ -290,9 +290,9 @@ body {
 	min-height: 45vh;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	flex-direction: column;
-	padding: 80px;
+	padding: 100px;
 	border-bottom: 1px solid grey;
 }
 
@@ -300,7 +300,6 @@ body {
 	font-size: 40px;
 	font-family: 'Roboto',sans-serif;
 	font-weight: 400;
-	position: relative;
 	opacity: 0;
 	transform: translateX(-150px);
 	transition: all 700ms ease-in;
@@ -311,10 +310,9 @@ body {
 .testtext {
 	font-family: 'Roboto',sans-serif;
 	font-weight: 100;
-	position: relative;
-	margin-right: 180px;
 	opacity: 0;
 	transform: translateY(150px);
+	color: #455a64;
 	transition: all 800ms ease-in;	
 }
 
@@ -322,7 +320,6 @@ body {
 	transform: translateX(0px);
 	opacity: 1;
 }
-
 
 .showingtext {
 	transform: translateY(0px);
@@ -494,6 +491,100 @@ body {
 	color: #E09690;
 }
 
+.speakers {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid grey;
+}
+
+.speakers-head {
+	font-size: 40px;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 400;
+	position: relative;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 700ms ease-in;
+	padding-bottom: 10px;
+	border-bottom : 2px solid #008BFF;
+	transition: all 500ms ease-in;
+}
+
+.speakers-head-show {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.speakers-body {
+	min-height: 380px;
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+	flex-wrap: wrap;
+}	
+
+.speaker-card {
+	min-height: 450px;
+	width: 300px;
+	margin: 15px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow:0 4px 7px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.1) inset;
+	opacity: 0;
+	transform: translateX(-150px);
+	transition: all 0.3s ease-in-out;
+}
+
+.speaker-card:hover {
+	box-shadow:0 1px 6px 4px rgba(0, 0, 0, 0.3);
+}
+
+.speaker-card-show {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.keynote-name {
+	color: #008BFF;
+	font-size: 25px;
+	margin-top: 7px;
+}
+
+.keynote-desc {
+	min-height: 100px;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 100;
+	padding: 17px;
+	font-size: 15px;
+	color: #455a64;
+}
+
+.keynote-links {
+	margin: 10px;
+}
+
+.keynote-links a {
+	color: black;
+	text-decoration: none;
+}
+
+.twitter:hover {
+	color: #008BFF;
+}
+
+.linkedin:hover {
+	color: #0077B5;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 937px) {
@@ -574,6 +665,10 @@ body {
 
 	.testtext {
 		font-size: 17px;
+	}
+
+	.speakers-body {
+		border: 1px solid #008BFF;
 	}
 }
 
