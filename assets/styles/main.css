@@ -659,21 +659,21 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	min-height: 400px;
-	padding: 30px;
+	padding: 20px;
 	width: 100%;
 }
 
 .sponsor {
 	height: 150px;
 	width: 250px;
-	margin: 20px;
+	margin: 12px;
 	border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
-	transform: translateX(150px);
+	transform: translateX(50px);
 	transition-delay: 650ms;
 }
 
