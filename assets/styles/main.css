@@ -673,7 +673,7 @@ body {
 	align-items: center;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
-	transform: translateX(50px);
+	transform: translateX(-50px);
 	transition-delay: 650ms;
 }
 
