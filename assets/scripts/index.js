@@ -112,8 +112,12 @@ $(window).scroll(function(){
           $('.sponsor').eq(i).addClass('sponsor-show');
         },120 * (i+1));
       });
+
+      if(wScroll > $('.schedule').offset().top - 480){
+        $('.schedule-head').addClass('schedule-head-show');
       }
   }
+}
 
 });
 
