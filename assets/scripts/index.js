@@ -102,6 +102,17 @@ $(window).scroll(function(){
         },300 * (i+1));
       });
     }
+
+      if(wScroll > $('.sponsors').offset().top - 280){
+      $('.sponsors-head').addClass('sponsors-show');
+      $('.sponsors-desc').addClass('sponsors-show');
+      $('.sponsors-button').addClass('sponsors-show');
+      $('.sponsor').each(function(i){
+        setTimeout(function(){
+          $('.sponsor').eq(i).addClass('sponsor-show');
+        },120 * (i+1));
+      });
+      }
   }
 
 });

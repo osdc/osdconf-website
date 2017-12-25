@@ -314,6 +314,7 @@ body {
 	transform: translateY(150px);
 	color: #455a64;
 	transition: all 800ms ease-in;	
+	text-align: center;
 }
 
 .showing {
@@ -585,6 +586,102 @@ body {
 	color: #0077B5;
 }
 
+.sponsors {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 75px;
+	border-bottom: 1px solid grey;
+}
+
+.sponsors-head {
+	font-size: 40px;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 400;
+	position: relative;
+	opacity: 0;
+	transform: translateY(100px);
+	padding-bottom: 10px;
+	border-bottom : 2px solid #008BFF;
+	transition: all 0.3s ease-in;
+}
+
+.sponsors-desc {
+	font-family: 'Roboto',sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+	color: #455a64;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.3s 100ms ease-in;
+	text-align: center;
+}	
+
+.sponsors-button
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 37px;
+	width: 200px;
+	font-family: 'Roboto',sans-serif;
+	font-size: 18px;
+	background-color: white;
+	color: #008BFF;
+	border: 2px solid #008BFF;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.3s 200ms ease-in;
+}
+
+.sponsors-button:hover
+{
+	color: white;
+	cursor: pointer;
+	box-shadow:0 4px 7px rgba(0, 0, 0, 0.3);
+	background-color: #008BFF;
+}
+
+.sponsors-button:active {
+	outline: none; 
+}
+
+.sponsors-show {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.sponsors-grid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 400px;
+	padding: 30px;
+	width: 100%;
+}
+
+.sponsor {
+	height: 150px;
+	width: 250px;
+	margin: 20px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	transform: translateX(150px);
+	transition-delay: 650ms;
+}
+
+.sponsor-show {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
 /* media queries */
 
 @media only screen and (max-width: 937px) {
@@ -669,6 +766,10 @@ body {
 
 	.speakers-body {
 		border: 1px solid #008BFF;
+	}
+
+	.sponsors {
+		padding: 40px;
 	}
 }
 
