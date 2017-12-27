@@ -338,7 +338,7 @@ body {
 	position: fixed;
 	background-color: rgba(0,0,0,0.93);
 	width: 0;
-	left: -80px;
+	left: -15vw;
 	padding: 20px;
 	font-family: 'Source Code Pro',sans-serif;
 	font-size: 30px;
@@ -374,7 +374,7 @@ body {
 
 .terminal.open{
 	max-height: 100vh;
-	width: 60%;
+	width: 50vw;
 }
 
 .terminal.close{
