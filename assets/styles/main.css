@@ -799,6 +799,42 @@ body {
 	transform: translateY(0px);
 }
 
+/*footer*/
+
+.footer {
+	min-height: 200px;
+	background: #008BFF;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 150px;
+	color: white;
+	font-family: 'Roboto',sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.footer li {
+	list-style-type: none;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	cursor: pointer;
+}
+
+.border {
+	min-width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 937px) {
@@ -916,6 +952,11 @@ body {
 
 	.right {
 	left: 0%;
+	}
+
+	.footer {
+		flex-direction: column;
+		padding: 0;
 	}
 }
 
