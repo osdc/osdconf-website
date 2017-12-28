@@ -43,14 +43,14 @@
       <span class="session">/home/osdconf/navigation</span>
     </div>
     <div class="nav-background">
-        <div class="nav">
-          <a data-scroll href="#home"><p class="line1">$ Home</p></a>
-          <a data-scroll href="#agenda"><p class="line2">&nbsp;>Agenda...</p></a>
-          <a data-scroll href="#speakers-section"><p class="line3">$ Speakers</p></a>
-          <p class="line4">$ Sponsors</p>
-          <a href="#"><p class="line5">$ Venue</p></a>
-          <a href="#"><p class="line6">$ Contact_us</p></a>
-        </div>
+    <div class="nav">
+      <a data-scroll href="#home"><p class="line1">$ Home</p></a>
+      <a data-scroll href="#agenda"><p class="line2">&nbsp;>Agenda...</p></a>
+      <a data-scroll href="#speakers-section"><p class="line3">$ Speakers</p></a>
+      <a data-scroll href="#sponsors-section"><p class="line4">$ Sponsors</p></a>
+      <a data-scroll href="#schedule-section"><p class="line5">$ Schedule</p></a>
+      <a href="#"><p class="line1">$ Venue</p></a>
+      <a href="#"><p class="line6">$ Contact_us</p></a>
     </div>
   </div>
 
@@ -68,14 +68,19 @@
 		<div class="pad"></div>
 		<div class="cleanup"></div>
 		<div class="writeup">OSDConf<sub>2018</sub>
-			<br><span style="font-size: 25px;">11-12 March</span>
+			<br><span style="font-size: 25px;">10-11 March</span>
 		</div>
 	</div>
 
 	<section class="about" onclick="validatenav()" id="agenda">
 		<p class="test">What is it about?</p>
     <br>
-		<span class="testtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum nunc, consequat commodo augue sed, imperdiet blandit sem. Nulla iaculis sapien vel urna varius consequat. Aenean lorem lorem, pharetra et nibh id, commodo vestibulum erat. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum ligula, vitae vehicula ante mauris fringilla felis. Suspendisse et odio sit amet mi gravida fermentum non at sem. Vestibulum varius purus justo, congue semper enim ultricies quis. Nunc commodo, augue sed rhoncus mattis, neque metus blandit tortor, a lacinia arcu mauris in nisi</span>
+  		<span class="testtext">Open Source Developers' Conference is the first of its kind event, solely focused on the Open Source community. 
+        We have a lot in store for you whether you're just an amateur developer or a seasoned programmer. 
+        Explore and discover new trends in the community, get to know people actively contributing to the community and most importantly go home with more knowledge than you had before.
+        We'll have tech-talks, keynotes from prominent developers, devsprint to discuss and develop new ideas with like-minded people and what not.
+        So, mark your calenders for 10th and 11th of March and don't miss out on this unique event.
+      </span>
 	</section>
 
   <!-- Speakers Section -->
@@ -108,7 +113,79 @@
     <span style="margin-top: 15px;">View the full list of speakers <a href="#" style="text-decoration: none; color: #008BFF">here</a></span>
   </section>
 
-  <div class="main"></div>
+  <!-- Sponsors -->
+
+  <section class="sponsors" onclick="validatenav()" id="sponsors-section">
+    <p class="sponsors-head">Our Sponsors</p>
+    <p class="sponsors-desc">
+      Open Source Developers' Conference is entirely driven by volunteers. Sponsoring the event helps us to sustain, grow the conference along with the community. Sponsors help to make the conference affordable for community, and maintaining the inventory for the conference.
+    </p>
+    <div class="sponsors-button">Become a Sponsor</div>
+    <section class="sponsors-grid">
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+      <div class="sponsor">Sponsor's Logo</div>
+    </section>
+  </section>
+
+  <!-- Schedule -->
+
+  <section class="schedule" onclick="validatenav()" id="schedule-section">
+
+    <p class="schedule-head">Schedule</p>
+
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>Day 1</h2>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Day 2</h2>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+    </div>  
+
+  </section>
+
+  <!--Footer-->
+
+  <section class="footer">
+    <div class="border">
+      <ul>
+        <li>Code of conduct</li>
+        <li>FAQ</li>
+        <li>Event terms</li>
+        <li>Past Events</li>
+      </ul>
+    </div>
+    <div class="border">
+      <ul>
+        <li><i class="fa fa-github"></i><a href="#">Github</a></li>
+        <li><i class="fa fa-commenting"></i><a href="#">Discord</a></li>
+        <li><i class="fa fa-facebook"></i><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+    <div class="border">
+      Powered by
+      <br>
+      <img src="assets/images/osdc.png" height="127px" width="170px">
+    </div>
+  </section>
 
 	<!--Scripts-->
 
