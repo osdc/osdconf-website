@@ -901,7 +901,9 @@ body {
     font-size: 1.1rem;
     margin-left:20px;
     margin-right: 20px;
-    
+}
+.fa{
+    margin-right: 7px;
 }
 
 /* media queries */
@@ -965,16 +967,22 @@ body {
 	.lo {
 		font-size: 17px;
 	}
-
+    
 	.testtext {
 		margin-right: 10px;
 	}
+    .footer{
+        padding: 0 60px;
+    }
     .footer-address{
-     font-size: 1rem;   
+         font-size: 1rem;   
+    }
+    .footerlink{
+        left:-15px;
     }
     .footerlink >ul>li{
-        margin-right: 10px;
-        margin-left: 0px;
+        margin-right: 6px;
+        margin-left: 6px;
     }
 }
 
@@ -1035,10 +1043,17 @@ body {
 
 	.footer {
 		flex-direction: column;
-		padding: 0;
+		padding: 15px 0;
 	}
     .footer-address{
      font-size: 1rem;   
+    }
+    .footerlink{
+        left:-15px;
+    }
+    .footerlink >ul>li{
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
 
