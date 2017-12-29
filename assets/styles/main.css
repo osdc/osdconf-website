@@ -835,6 +835,101 @@ body {
 	flex-direction: column;
 }
 
+/* Speakers page */
+
+.speakers-main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	flex-direction: column;
+	background-attachment: fixed;
+	background: #008BFF;
+}
+
+.new-speaker-head {
+	font-size: 50px;
+	font-family: 'Permanent Marker',sans-serif;
+	font-weight: 400;
+	padding-bottom: 10px;
+	border-bottom : 4px solid white;
+	color: white;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 0;
+}
+
+.speakers-cards {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.speakers-card {
+	margin: 20px;
+	min-height: 250px;
+	min-width: 250px;
+	background-image: url(https://avatars0.githubusercontent.com/u/1024025?s=460&v=4);
+	box-shadow:0 4px 7px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.1) inset;
+	background-position: center center;
+	background-size: auto 250px; 
+	transition: all 0.25s ease-in-out;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+.speakers-card:hover {
+	box-shadow:0 6px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 0;
+}
+
+.speakers-card:hover .layer {
+	transform: translateX(0px);
+}
+
+.speakers-card:hover .layer1 {
+	transform: translateX(0px);
+}
+
+.layer1 {
+	min-width: 250px;
+	height: 210px;
+	transform: translateX(250px);
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	font-weight: bold;
+	color: white;
+}
+
+.layer {
+	min-width: 250px;
+	height: 40px;
+	transform: translateX(-250px);
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding:5px 77px;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 937px) {
@@ -930,28 +1025,28 @@ body {
 	}
 
 	.timeline::after {
-	left: 31px;
+		left: 31px;
 	}
 
 	.container {
-	width: 100%;
-	padding-left: 70px;
-	padding-right: 25px;
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
 	}
 
 	.container::before {
-	left: 60px;
-	border: medium solid white;
-	border-width: 10px 10px 10px 0;
-	border-color: transparent #008BFF transparent transparent;
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent #008BFF transparent transparent;
 	}
 
 	.left::after, .right::after {
-	left: 15px;
+		left: 15px;
 	}
 
 	.right {
-	left: 0%;
+		left: 0%;
 	}
 
 	.footer {
