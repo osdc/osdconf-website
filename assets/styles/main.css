@@ -338,7 +338,7 @@ body {
 	position: fixed;
 	background-color: rgba(0,0,0,0.93);
 	width: 0;
-	left: -80px;
+	left: -15vw;
 	padding: 20px;
 	font-family: 'Source Code Pro',sans-serif;
 	font-size: 30px;
@@ -374,7 +374,7 @@ body {
 
 .terminal.open{
 	max-height: 100vh;
-	width: 60%;
+	width: 50vw;
 }
 
 .terminal.close{
@@ -425,8 +425,18 @@ body {
   border: 0;
 }
 
+.nav-background{
+/*    background-image:url(../images/osdpng.png);*/
+    background-size: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+	min-height: 350px;
+    box-shadow: 0px 0px 10px 1000px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
 .nav {
-	background: rgba(0,0,0,0.95);
+	background: rgba(0,0,0,0.9);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	font-family: 'Source Code Pro', monospace;
@@ -435,6 +445,8 @@ body {
 	color: white;
 	padding: 14px;
 	min-height: 350px; 
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.6),6px 7px 7px 0px rgba(0,0,0,0.4);
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .nav a {
@@ -933,6 +945,9 @@ body {
 /* media queries */
 
 @media only screen and (max-width: 937px) {
+    .nav-background{
+        background-size: 200px;
+    }
 
 	.pot, .notebook, .cleanup, .calci, .pen {
 		display: none;
