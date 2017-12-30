@@ -818,6 +818,7 @@ body {
 	background-image: url(../images/audi.png);
 	background-repeat: no-repeat;
 	background-size: cover; 
+	background-attachment: fixed;
 }
 
 .venue-overlay {
