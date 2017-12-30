@@ -116,6 +116,11 @@ $(window).scroll(function(){
       if(wScroll > $('.schedule').offset().top - 480){
         $('.schedule-head').addClass('schedule-head-show');
       }
+
+      if(wScroll > $('.venue').offset().top - 300){
+        $('.venue-head').addClass('venue-head-show');
+        $('.actual-venue').addClass('actual-venue-show');
+      }
   }
 }
 

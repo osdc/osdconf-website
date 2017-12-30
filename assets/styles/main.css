@@ -77,7 +77,7 @@ body {
 }
 
 .menu:hover .menu-circle {
-  animation: beat 0.4s infinite alternate;
+  animation: beat 0.4s 4 alternate;
   animation-timing-function: ease-in-out;
 }
 
@@ -396,6 +396,7 @@ body {
 #cross {
 	display: none;
 	color:#37474f;
+	margin-left: 7px;
 	font-size: 10px;
 }
 
@@ -426,7 +427,6 @@ body {
 }
 
 .nav-background{
-/*    background-image:url(../images/osdpng.png);*/
     background-size: 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -436,7 +436,7 @@ body {
 }
 
 .nav {
-	background: rgba(0,0,0,0.9);
+	background: rgba(0,0,0,0.96);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	font-family: 'Source Code Pro', monospace;
@@ -445,7 +445,7 @@ body {
 	color: white;
 	padding: 14px;
 	min-height: 350px; 
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.6),6px 7px 7px 0px rgba(0,0,0,0.4);
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.6);
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -645,7 +645,7 @@ body {
 	border: 2px solid #008BFF;
 	opacity: 0;
 	transform: translateY(100px);
-	transition: all 0.3s 200ms ease-in;
+	transition: all 0.2s 200ms ease-in;
 }
 
 .sponsors-button:hover
@@ -811,6 +811,75 @@ body {
 	transform: translateY(0px);
 }
 
+/*venue*/
+
+.venue {
+	min-height: 40vh;
+	background-image: url(../images/audi.png);
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+.venue-overlay {
+	background: rgba(0,0,0,0.6);
+	min-height: 60vh;
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	padding: 30px;
+}
+
+.venue-head {
+	font-size: 40px;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 400;
+	position: relative;
+	opacity: 0;
+	transform: translateY(100px);
+	padding-bottom: 10px;
+	border-bottom : 2px solid #008BFF;
+	transition: all 0.3s ease-in;
+}
+
+.venue-head-show {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.venue-body {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.actual-venue {
+	padding: 0 40px;
+	font-size: 32px;
+	font-weight: bold;
+	opacity: 0;
+	transform: translateX(-200px); 
+	transition: all 0.3s ease-in-out;
+	transition-delay: 200ms;
+}
+
+.actual-venue-show {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.map {
+	min-height: 450px;
+	min-width: 620px;
+	background-image: url(../images/jiitmap.png);
+	background-position: center center;
+	background-position: 620px auto;
+	box-shadow:0 7px 10px rgba(0, 0, 0, 0.9), 0 7px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
 /*footer*/
 
 .footer {
@@ -825,13 +894,6 @@ body {
 	font-size: 20px;
 	font-weight: 600;
 }
-/*
-.footer::after{
-    content: "";
-    clear:both;
-    display: table;
-}
-*/
 
 .footer li {
 	list-style-type: none;
@@ -855,22 +917,22 @@ body {
 	flex-direction: column;
     display: block;
 }
-.footer-column1{
+.footer-column1 {
     text-align: center;
     align-content: center;
     margin: 0 auto;
 }
-.footer-column1-text{
+.footer-column1-text {
     font-size: .9rem;
     margin: 0 auto;
 }
-.footer-column2{
+.footer-column2 {
     font-size: 1rem;
 }
-.footer-column2>ul>li{
+.footer-column2>ul>li {
     padding: 3px 0;
 }
-.footer-address{
+.footer-address {
     box-sizing: border-box;
     display: block;
     padding: 4px;
@@ -879,30 +941,30 @@ body {
     border-bottom: 1px solid white;
     text-align: center;
 }
-.footer-column3{
+.footer-column3 {
     align-content: center;
 }
-.footerlink{
-    width:100%;
+.footerlink {
+    width: 100%;
     display: block;
     position: relative;
     align-content: center;
     text-align: center;
 }
-.footerlink::after{
+.footerlink::after {
     content: "";
-    clear:both;
+    clear: both;
     display: table;
-    
 }
 
-.footerlink >ul>li{
-    float:left;
+.footerlink >ul>li {
+    float: left;
     font-size: 1.1rem;
-    margin-left:20px;
+    margin-left: 20px;
     margin-right: 20px;
 }
-.fa{
+
+.fa {
     margin-right: 7px;
 }
 
@@ -1140,15 +1202,31 @@ body {
 		flex-direction: column;
 		padding: 15px 0;
 	}
-    .footer-address{
+
+    .footer-address {
      font-size: 1rem;   
     }
-    .footerlink{
+
+    .footerlink {
         left:-15px;
     }
-    .footerlink >ul>li{
+
+    .footerlink >ul>li {
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .venue-body {
+    	flex-direction: column;
+    	padding: 5px 5px;
+    }
+
+    .map {
+    	min-width: 350px;
+    }
+
+    .actual-venue {
+    	padding: 5px;
     }
 }
 
