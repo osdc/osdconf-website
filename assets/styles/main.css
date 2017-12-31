@@ -858,13 +858,17 @@ body {
 }
 
 .actual-venue {
-	padding: 0 40px;
+	padding: 0 35px;
 	font-size: 32px;
 	font-weight: bold;
 	opacity: 0;
 	transform: translateX(-200px); 
 	transition: all 0.3s ease-in-out;
 	transition-delay: 200ms;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .actual-venue-show {
@@ -1228,6 +1232,7 @@ body {
 
     .actual-venue {
     	padding: 5px;
+    	font-size: 32px;
     }
 }
 
@@ -1242,12 +1247,15 @@ body {
 		left: initial;
 		right: 0;
 	}
+
 	.writeup {
 		left: calc(100vw - 320px);
 	}
+
 	.pad {
 		left: calc(100vw - 150px);	
 	}
+
 	.phone {
 		left: calc(100vw - 130px);
 	}
