@@ -876,6 +876,11 @@ body {
 	transform: translateX(0px);
 }
 
+.extra-span {
+	font-size: 27px;
+	margin-top: 10px;
+}
+
 .map {
 	min-height: 450px;
 	min-width: 620px;
@@ -1227,12 +1232,17 @@ body {
     }
 
     .map {
-    	min-width: 350px;
+    	min-width: 320px;
     }
 
     .actual-venue {
-    	padding: 5px;
-    	font-size: 32px;
+    	padding: 3px;
+    	font-size: 22px;
+    	align-items: flex-start;
+    }
+
+    .extra-span {
+    	font-size: 17px;
     }
 }
 
