@@ -16,7 +16,7 @@ const paths = {
     src: 'app/*.html',
     dest: 'build'
   }
-}
+};
 
 gulp.task('clean', () => {
   del(['build']);
@@ -28,11 +28,14 @@ gulp.task('serve', ['copy-html', 'minify-css'], () => {
   });
 
   gulp.watch(paths.styles.src, ['minify-css']);
-  gulp.watch(paths.templates.src, ['copy-html']).on('change', browserSync.reload);
+  gulp
+    .watch(paths.templates.src, ['copy-html'])
+    .on('change', browserSync.reload);
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src(paths.styles.src)
+  return gulp
+    .src(paths.styles.src)
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.stream());
