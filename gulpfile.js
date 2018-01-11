@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
+const del = require('del');
 
 const paths = {
   styles: {
@@ -17,12 +18,17 @@ const paths = {
   }
 }
 
-gulp.task('serve', () => {
+gulp.task('clean', () => {
+  del(['build']);
+});
+
+gulp.task('serve', ['clean', 'copy-html', 'minify-css'], () => {
   browserSync.init({
-    server: './app'
+    server: './build'
   });
 
-  gulp.watch('app/*.html').on('change', browserSync.reload);
+  gulp.watch(paths.styles.src, ['minify-css']);
+  gulp.watch(paths.templates.src, ['copy-html']).on('change', browserSync.reload);
 });
 
 gulp.task('minify-css', () => {
