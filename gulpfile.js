@@ -22,7 +22,7 @@ gulp.task('clean', () => {
   del(['build']);
 });
 
-gulp.task('serve', ['clean', 'copy-html', 'minify-css'], () => {
+gulp.task('serve', ['copy-html', 'minify-css'], () => {
   browserSync.init({
     server: './build'
   });
@@ -34,12 +34,12 @@ gulp.task('serve', ['clean', 'copy-html', 'minify-css'], () => {
 gulp.task('minify-css', () => {
   return gulp.src(paths.styles.src)
     .pipe(cleanCSS())
-    .pipe(gulp.dest(paths.styles.dest));
+    .pipe(gulp.dest(paths.styles.dest))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('copy-html', () => {
-  return gulp.src(paths.templates.src)
-    .pipe(gulp.dest(paths.templates.dest));
+  return gulp.src(paths.templates.src).pipe(gulp.dest(paths.templates.dest));
 });
 
 gulp.task('default', ['serve']);
