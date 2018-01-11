@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/osdc/osdconf-website/issues"
   },
-  "homepage": "https://github.com/osdc/osdconf-website#readme"
+  "homepage": "https://github.com/osdc/osdconf-website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
