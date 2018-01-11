@@ -6,11 +6,11 @@ const del = require('del');
 const paths = {
   styles: {
     src: 'app/assets/styles/*.css',
-    dest: 'build/styles'
+    dest: 'build/assets/styles'
   },
   scripts: {
     src: 'app/assets/scripts/*.js',
-    dest: 'build/scripts'
+    dest: 'build/assets/scripts'
   },
   templates: {
     src: 'app/*.html',
