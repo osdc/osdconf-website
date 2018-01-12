@@ -28,22 +28,18 @@ gulp.task('clean', () => {
   del(['build']);
 });
 
-gulp.task(
-  'serve',
-  ['copy-html', 'minify-css', 'uglify-js', 'minify-images'],
-  () => {
-    browserSync.init({
-      server: './build'
-    });
+gulp.task('serve', ['build'], () => {
+  browserSync.init({
+    server: './build'
+  });
 
-    gulp.watch(paths.styles.src, ['minify-css']);
-    gulp.watch(paths.scripts.src, ['uglify-js']);
-    gulp.watch(paths.images.src, ['minify-images']);
-    gulp
-      .watch(paths.templates.src, ['copy-html'])
-      .on('change', browserSync.reload);
-  }
-);
+  gulp.watch(paths.styles.src, ['minify-css']);
+  gulp.watch(paths.scripts.src, ['uglify-js']);
+  gulp.watch(paths.images.src, ['minify-images']);
+  gulp
+    .watch(paths.templates.src, ['copy-html'])
+    .on('change', browserSync.reload);
+});
 
 gulp.task('minify-css', () => {
   return gulp
