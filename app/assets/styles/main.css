@@ -13,7 +13,7 @@ main {
 }
 
 main > img {
-  margin: 40px;
+  max-height: 500px;
 }
 
 main > span {
