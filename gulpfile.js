@@ -60,7 +60,7 @@ gulp.task('uglify-js', () => {
 gulp.task('minify-images', () => {
   return gulp
     .src(paths.images.src)
-    .pipe(imagemin({ optimizationLevel: 5, verbose: true }))
+    .pipe(imagemin({ optimizationLevel: 7, verbose: true }))
     .pipe(gulp.dest(paths.images.dest));
 });
 
