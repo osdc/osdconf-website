@@ -72,4 +72,12 @@ gulp.task('copy-html', () => {
   return gulp.src(paths.templates.src).pipe(gulp.dest(paths.templates.dest));
 });
 
+gulp.task('build', [
+  'clean',
+  'copy-html',
+  'minify-css',
+  'minify-images',
+  'uglify-js'
+]);
+
 gulp.task('default', ['serve']);
