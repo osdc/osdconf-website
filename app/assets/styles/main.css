@@ -60,9 +60,49 @@ body {
   font-size: 14px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+footer .other-stuff {
+  background: #44475a;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer,
+footer a,
+footer a:active {
+  color: #f8f8f2;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  flex-grow: 1;
+}
+
+footer li {
+  padding: 5px;
+}
+
+footer .code-text {
+  background: #282a36;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
 @media (min-width: 576px) {
   body {
     font-size: 16px;
+  }
+
+  footer .other-stuff {
+    flex-direction: row;
+    align-items: center;
   }
 }
 
