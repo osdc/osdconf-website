@@ -10,15 +10,16 @@ main {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   padding: 10px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
-main > img {
-  max-height: 500px;
+main > * {
+  max-width: 500px;
 }
 
 main > span {
   font-size: 1.5em;
-  margin: 3px;
 }
 
 main > span.second {
@@ -30,6 +31,10 @@ main > span.text {
   text-transform: none;
   font-family: 'Roboto', sans-serif;
   margin: 1.2em;
+}
+
+main > span.text > strong {
+  font-weight: 700;
 }
 
 main > button {
@@ -107,7 +112,7 @@ body {
 }
 
 .menu-line {
-  background-color: #50fa7b;
+  background: #50fa7b;
   height: 2px;
   width: 100%;
   border-radius: 2px;
