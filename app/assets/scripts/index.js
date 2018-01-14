@@ -1,5 +1,3 @@
-var pContainerHeight = $('.main').height();
-
 var toggleMenu = 0;
 
 $('#navbar-close').on('click', function(e) {
@@ -34,56 +32,6 @@ $('.menu-link').click(function(e) {
 $(window).scroll(function() {
   var wScroll = $(this).scrollTop();
 
-  if (wScroll <= pContainerHeight) {
-    $('.laptop').css({
-      transform: 'translate(0px, -' + wScroll / 5 + '%)'
-    });
-
-    $('.phone').css({
-      transform: 'translate(0px, -' + wScroll / 3 + '%)'
-    });
-
-    $('.cup').css({
-      transform: 'translate(0px, -' + wScroll / 5 + '%)'
-    });
-
-    $('.specs').css({
-      transform: 'translate(0px, -' + wScroll / 20 + '%)'
-    });
-
-    $('.pot').css({
-      transform: 'translate(0px, -' + wScroll / 40 + '%)'
-    });
-
-    $('.notebook').css({
-      transform: 'translate(0px, -' + wScroll / 3 + '%)'
-    });
-
-    $('.calci').css({
-      transform: 'translate(0px, -' + wScroll / 6 + '%)'
-    });
-
-    $('.pencil').css({
-      transform: 'translate(0px, -' + wScroll / 5 + '%)'
-    });
-
-    $('.notepad').css({
-      transform: 'translate(0px, -' + wScroll / 4 + '%)'
-    });
-
-    $('.pen').css({
-      transform: 'translate(0px, -' + wScroll / 5 + '%)'
-    });
-
-    $('.pad').css({
-      transform: 'translate(0px, -' + wScroll / 4 + '%)'
-    });
-
-    $('.cleanup').css({
-      transform: 'translate(0px, -' + wScroll / 2 + '%)'
-    });
-  }
-
   if (wScroll > $('.about').offset().top - 500) {
     $('.test').addClass('showing');
     $('.testtext').addClass('showingtext');
@@ -113,11 +61,6 @@ $(window).scroll(function() {
 
       if (wScroll > $('.schedule').offset().top - 480) {
         $('.schedule-head').addClass('schedule-head-show');
-      }
-
-      if (wScroll > $('.venue').offset().top - 300) {
-        $('.venue-head').addClass('venue-head-show');
-        $('.actual-venue').addClass('actual-venue-show');
       }
     }
   }
