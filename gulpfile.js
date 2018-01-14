@@ -1,8 +1,11 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
+
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
+
 const del = require('del');
 
 const paths = {
@@ -28,7 +31,7 @@ gulp.task('clean', () => {
   del(['build']);
 });
 
-gulp.task('serve', ['build'], () => {
+gulp.task('serve', ['clean', 'build'], () => {
   browserSync.init({
     server: './build'
   });
@@ -37,7 +40,7 @@ gulp.task('serve', ['build'], () => {
   gulp.watch(paths.scripts.src, ['uglify-js']);
   gulp.watch(paths.images.src, ['minify-images']);
   gulp
-    .watch(paths.templates.src, ['copy-html'])
+    .watch(paths.templates.src, ['minify-html'])
     .on('change', browserSync.reload);
 });
 
@@ -64,16 +67,13 @@ gulp.task('minify-images', () => {
     .pipe(gulp.dest(paths.images.dest));
 });
 
-gulp.task('copy-html', () => {
-  return gulp.src(paths.templates.src).pipe(gulp.dest(paths.templates.dest));
+gulp.task('minify-html', () => {
+  return gulp
+    .src(paths.templates.src)
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest(paths.templates.dest));
 });
 
-gulp.task('build', [
-  'clean',
-  'copy-html',
-  'minify-css',
-  'minify-images',
-  'uglify-js'
-]);
+gulp.task('build', ['minify-html', 'minify-css', 'minify-images', 'uglify-js']);
 
 gulp.task('default', ['serve']);
