@@ -52,7 +52,6 @@ main {
   color: #f8f8f2;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
-  text-transform: uppercase;
   padding: 10px;
   font-weight: 300;
   line-height: 1.5;
@@ -64,6 +63,7 @@ main > * {
 
 main > span {
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 main > span.second {
@@ -81,7 +81,8 @@ main > span.text > strong {
   font-weight: 700;
 }
 
-main > button {
+main > a,
+footer .buttons a {
   font-size: 1.3em;
   color: #50fa7b;
   border: 2px solid #50fa7b;
@@ -90,16 +91,27 @@ main > button {
   margin: 0.7em;
   padding: 0.5em;
   border-radius: 5px;
+  text-decoration: none;
 
   transition: all 0.2s ease-in-out;
 }
 
-main > button:hover {
+main > a:hover,
+footer .buttons a:hover {
   background: #50fa7b;
   color: #282a36;
 }
 
 /* footer */
+
+footer .buttons {
+  display: flex;
+}
+
+footer .buttons a {
+  flex-grow: 1;
+  text-align: center;
+}
 
 footer .other-stuff {
   background: #44475a;
