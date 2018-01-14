@@ -3,6 +3,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  line-height: 1.5;
 }
 
 @media (min-width: 576px) {
@@ -54,7 +55,6 @@ main {
   font-family: 'Roboto Condensed', sans-serif;
   padding: 10px;
   font-weight: 300;
-  line-height: 1.5;
 }
 
 main > * {
@@ -92,7 +92,6 @@ footer .buttons a {
   padding: 0.5em;
   border-radius: 5px;
   text-decoration: none;
-
   transition: all 0.2s ease-in-out;
 }
 
@@ -146,6 +145,47 @@ footer .code-text {
 footer .fa {
   margin: 0 5px;
 }
+
+/* sections */
+
+section > h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  border-bottom: 2px solid #50fa7b;
+  font-size: 2em;
+}
+
+section > p {
+  font-size: 1.1em;
+  max-width: 1000px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  padding: 4em 0;
+}
+
+section a.green-link {
+  font-size: 1.3em;
+  color: #50fa7b;
+  border: 2px solid #50fa7b;
+  background: transparent;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0.7em;
+  padding: 0.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+section a.green-link:hover {
+  background: #50fa7b;
+  color: white;
+}
+
+/* menu */
 
 .menu {
   position: fixed;
@@ -239,37 +279,6 @@ footer .fa {
 
 .menu.open .menu-circle {
   transform: scale(0);
-}
-
-.about {
-  min-height: 45vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 100px;
-  border-bottom: 1px solid grey;
-}
-
-.test {
-  font-size: 40px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  opacity: 0;
-  transform: translateX(-150px);
-  transition: all 700ms ease-in;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #008bff;
-}
-
-.testtext {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  opacity: 0;
-  transform: translateY(150px);
-  color: #455a64;
-  transition: all 800ms ease-in;
-  text-align: center;
 }
 
 .showing {
@@ -521,17 +530,17 @@ footer .fa {
 }
 
 .keynote-name {
-  color: #008bff;
   font-size: 25px;
   margin-top: 7px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .keynote-desc {
   min-height: 100px;
+  max-height: 250px;
+  overflow: scroll;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
   padding: 17px;
-  font-size: 15px;
   color: #455a64;
 }
 
@@ -564,7 +573,6 @@ footer .fa {
 
 .sponsors-head {
   font-size: 40px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   position: relative;
   opacity: 0;
@@ -575,7 +583,6 @@ footer .fa {
 }
 
 .sponsors-desc {
-  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: #455a64;
