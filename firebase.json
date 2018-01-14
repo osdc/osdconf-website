@@ -1,10 +1,12 @@
 {
   "hosting": {
     "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "headers": [
+      {
+        "source": "**/*.@(svg|js|css)",
+        "headers": [{ "key": "Cache-Control", "value": "max-age=604800" }]
+      }
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
