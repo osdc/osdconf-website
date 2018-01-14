@@ -24,6 +24,10 @@ const paths = {
   templates: {
     src: 'app/*.html',
     dest: 'build'
+  },
+  favicon: {
+    src: 'app/favicon.ico',
+    dest: 'build'
   }
 };
 
@@ -74,6 +78,16 @@ gulp.task('minify-html', () => {
     .pipe(gulp.dest(paths.templates.dest));
 });
 
-gulp.task('build', ['minify-html', 'minify-css', 'minify-images', 'uglify-js']);
+gulp.task('copy-favicon', () => {
+  return gulp.src(paths.favicon.src).pipe(gulp.dest(paths.favicon.dest));
+});
+
+gulp.task('build', [
+  'minify-html',
+  'copy-favicon',
+  'minify-css',
+  'minify-images',
+  'uglify-js'
+]);
 
 gulp.task('default', ['serve']);
