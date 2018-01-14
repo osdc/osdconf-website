@@ -934,57 +934,6 @@ footer .fa {
     background-size: 200px;
   }
 
-  .pot,
-  .notebook,
-  .cleanup,
-  .calci,
-  .pen {
-    display: none;
-  }
-
-  .cup {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 110px;
-    width: 120px;
-    right: 5vw;
-    background-size: auto 110px;
-  }
-
-  .specs {
-    display: none;
-  }
-
-  .pad {
-    width: 150px;
-  }
-
-  .notepad {
-    height: 200px;
-    width: 210px;
-    background-size: auto 200px;
-  }
-
-  .phone {
-    top: 60vh;
-    height: 120px;
-    width: 130px;
-    background-size: auto 120px;
-  }
-
-  .writeup {
-    left: 5vh;
-    top: 50vh;
-    font-size: 40px;
-  }
-
-  .laptop {
-    height: 300px;
-    width: 290px;
-    background-size: contain;
-  }
-
   .terminal {
     width: 0;
   }
@@ -995,19 +944,6 @@ footer .fa {
 
   .testtext {
     margin-right: 10px;
-  }
-  .footer {
-    padding: 0 60px;
-  }
-  .footer-address {
-    font-size: 1rem;
-  }
-  .footerlink {
-    left: -15px;
-  }
-  .footerlink > ul > li {
-    margin-right: 6px;
-    margin-left: 6px;
   }
 }
 
@@ -1066,24 +1002,6 @@ footer .fa {
     left: 0%;
   }
 
-  .footer {
-    flex-direction: column;
-    padding: 15px 0;
-  }
-
-  .footer-address {
-    font-size: 1rem;
-  }
-
-  .footerlink {
-    left: -15px;
-  }
-
-  .footerlink > ul > li {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
   .venue-body {
     flex-direction: column;
     padding: 5px 5px;
@@ -1107,24 +1025,5 @@ footer .fa {
 @media only screen and (min-width: 607px) {
   .terminal {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .laptop {
-    left: initial;
-    right: 0;
-  }
-
-  .writeup {
-    left: calc(100vw - 320px);
-  }
-
-  .pad {
-    left: calc(100vw - 150px);
-  }
-
-  .phone {
-    left: calc(100vw - 130px);
   }
 }
