@@ -118,7 +118,7 @@ footer .other-stuff {
   padding: 20px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -131,7 +131,6 @@ footer a:active {
 
 footer ul {
   list-style-type: none;
-  flex-grow: 1;
 }
 
 footer li {
