@@ -8,12 +8,9 @@
   <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAADw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABERAREQEREAEREBERAREQAREQEREBERABERAREQEREAAAAAAAAAAAAAAAAAABERAAAAAAAAEREAAAAAAAAREQAAAAAAABERAAAAAAAAAAAAAAABERAAAAAAAAEREAAAAAAAAREQAAAAAAABERAAAAAAAAAAAAAAD//wAAhCEAAIQhAACEIQAAhCEAAP//AAD/4QAA/+EAAP/hAAD/4QAA//8AAPw/AAD8PwAA/D8AAPw/AAD//wAA"
     rel="icon" type="image/x-icon" />
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700|Roboto+Condensed:700" rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
 </head>
 
 <body>
@@ -256,6 +253,28 @@
   </footer>
 
   <!--Scripts-->
+
+  <script>
+    function loadCSS(href) {
+      var ss = window.document.createElement('link'),
+        ref = window.document.getElementsByTagName('head')[0];
+      ss.rel = 'stylesheet';
+      ss.href = href;
+      ss.media = 'only x';
+      ref.parentNode.insertBefore(ss, ref);
+
+      setTimeout(function () {
+        ss.media = 'all';
+      }, 0);
+    }
+    loadCSS('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+    loadCSS('https://fonts.googleapis.com/css?family=Roboto:300,700|Roboto+Condensed:700');
+  </script>
+  <noscript>
+    <!-- Let's not assume anything -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700|Roboto+Condensed:700">
+  </noscript>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/scripts/index.js"></script>
