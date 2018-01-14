@@ -78,16 +78,6 @@ gulp.task('minify-html', () => {
     .pipe(gulp.dest(paths.templates.dest));
 });
 
-gulp.task('copy-favicon', () => {
-  return gulp.src(paths.favicon.src).pipe(gulp.dest(paths.favicon.dest));
-});
-
-gulp.task('build', [
-  'minify-html',
-  'copy-favicon',
-  'minify-css',
-  'minify-images',
-  'uglify-js'
-]);
+gulp.task('build', ['minify-html', 'minify-css', 'minify-images', 'uglify-js']);
 
 gulp.task('default', ['serve']);
